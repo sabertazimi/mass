@@ -32,3 +32,11 @@
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
 }
+
+/// Throw error message and stop execution
+/// @param {String} $log - message to log out
+/// @return {Bool} [false]
+@function throw($log) {
+  @error $log;
+  @return false;
+}
