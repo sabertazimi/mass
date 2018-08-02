@@ -1,6 +1,6 @@
 /// Container's maximum width
 /// @type Length
-$max-width: 1024px;
+$max-width: 1024px !default;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
@@ -9,7 +9,7 @@ $breakpoints: (
   'small': 320px,
   'medium': 768px,
   'large': 1024px,
-);
+) !default;
 
 
 /// Z-indexes map, gathering all Z layers of the application
@@ -22,4 +22,4 @@ $z-indexes: (
   'dropdown': 4000,
   'default': 1,
   'below': -1,
-);
+) !default;
