@@ -9,7 +9,7 @@ const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   entry: {
-    main: './examples/index.js',
+    index: './examples/index.js',
   },
   output: {
     filename: devMode ? '[name].js' : '[name].[chunkhash].js',
