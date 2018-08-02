@@ -29,3 +29,21 @@
     }
   }
 }
+
+/// Mixin helper to output vendor prefixes
+/// @access public
+/// @author Hugo Giraudel
+/// @param {String} $property - Unprefixed CSS property
+/// @param {*} $value - Raw CSS value
+/// @param {List} $prefixes - List of prefixes to output
+/// @example scss - Usage
+///   .foo {
+///     @include prefix(transform, rotate(90deg), ('webkit', 'ms'));
+///   }
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+
+  #{$property}: $value;
+}
