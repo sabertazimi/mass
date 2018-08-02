@@ -1,0 +1,42 @@
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+/**
+ * Main content containers (full-width with a maximum width)
+ */
+.container {
+  width: 100%;
+  max-width: $max-width;
+  // padding-right: $padding-baseline;
+  // padding-left: $padding-baseline;
+}
+
+/**
+ * Hide text while making it readable for screen readers
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ */
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

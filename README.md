@@ -8,3 +8,8 @@ A minimal sass-based UI library
 
 - `build`: for `exmaples` building result
 - `lib`: for `src` building result (publish to npm)
+
+## Reference
+
+- [Sass Boilerplate](https://github.com/HugoGiraudel/sass-boilerplate)
+- [Typography](https://medium.com/codyhouse/create-your-design-system-part-1-typography-7c630d9092bd)
