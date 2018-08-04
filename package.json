@@ -8,7 +8,8 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --port 2333 --mode development --open --config webpack.examples.config.js",
     "lib": "cross-env NODE_ENV=production webpack --mode production && rm -fr ./lib/mass.js && rm -fr ./lib/mass.min.js",
     "examples": "cross-env NODE_ENV=production webpack --mode production --config webpack.examples.config.js",
-    "gh-pages": "npm run examples",
+    "docs": "sassdoc ./src --verbose",
+    "gh-pages": "npm run examples && npm run doc",
     "lint": "stylelint **/*.scss && eslint --ext .js --ext .jsx ./examples/"
   },
   "repository": {
@@ -54,6 +55,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "sass-loader": "^7.0.3",
+    "sassdoc": "^2.5.0",
     "style-loader": "^0.21.0",
     "stylelint": "^9.4.0",
     "stylelint-config-mass": "^1.0.1",
