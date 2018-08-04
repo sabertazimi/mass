@@ -8,9 +8,26 @@
   @if not map-has-key($z-indexes, $layer) {
     @error 'There is no layer named `#{$layer}` in $z-indexes. '
       + 'Layer should be one of #{map-keys($z-indexes)}.';
+    @return null;
   }
 
   @return map-get($z-indexes, $layer);
+}
+
+/// Get a color value from a color name
+/// @author Sass Guidelines
+/// @access public
+/// @param {String} $color - Color's name
+/// @return {Color}
+/// @require $colors
+@function color($key) {
+  @if not map-has-key($colors, $key) {
+    @error 'There is no color named `#{$key}` in $colors. '
+      + 'Color should be one of #{map-keys($colors)}.';
+    @return null;
+  }
+
+  @return map-get($colors, $key);
 }
 
 /// Slightly lighten a color
