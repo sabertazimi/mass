@@ -1,0 +1,82 @@
+////
+/// Global typography variablse defination
+/// @group Typography
+/// @author sabertazimi
+////
+
+/// Font family stack
+/// @type List
+$font-stack: ('Open Sans', sans-serif, serif) !default;
+
+/// Base text font size
+/// @type Length
+$text-base-size: 1rem !default;
+/// Scale ratio for font size
+/// @type Number
+$text-scale-ratio: 1.2 !default;
+
+/// Text font-size group
+/// @type Length
+$text-xxxs: ($text-base-size / ($text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio)) !default;
+/// Text font-size group
+/// @type Length
+$text-xxs: ($text-base-size / ($text-scale-ratio * $text-scale-ratio * $text-scale-ratio)) !default;
+/// Text font-size group
+/// @type Length
+$text-xs: ($text-base-size / ($text-scale-ratio * $text-scale-ratio)) !default;
+/// Text font-size group
+/// @type Length
+$text-sm: ($text-base-size / $text-scale-ratio) !default;
+/// Text font-size group
+/// @type Length
+$text-md: ($text-base-size * $text-scale-ratio) !default;
+/// Text font-size group
+/// @type Length
+$text-lg: ($text-base-size * $text-scale-ratio * $text-scale-ratio) !default;
+/// Text font-size group
+/// @type Length
+$text-xl: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
+/// Text font-size group
+/// @type Length
+$text-xxl: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
+/// Text font-size group
+/// @type Length
+$text-xxxl: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
+
+/// Vertical rhythm baseline
+/// @access private
+/// @type Length
+$vertical-rhythm-baseline: 24px !default;
+/// Body line height (computed to 16px * 1.5 = 24px)
+/// @type Number
+$body-line-height: 1.5 !default;
+/// Heading line height
+/// @type Number
+$heading-line-height: 1.2 !default;
+/// One of vertical rhythm spacing values
+/// @type Length
+$space-xxxs: 0.25em !default;
+/// One of vertical rhythm spacing values
+/// @type Length
+$space-xxs: 0.375em !default;
+/// One of vertical rhythm spacing values
+/// @type Length
+$space-xs: 0.5em !default;
+/// One of vertical rhythm spacing values
+/// @type Length
+$space-sm: 0.75em !default;
+/// One of vertical rhythm spacing values
+/// @type Length
+$space-md: 1.25em !default;
+/// One of vertical rhythm spacing values
+/// @type Length
+$space-lg: 2em !default;
+/// One of vertical rhythm spacing values
+/// @type Length
+$space-xl: 3.25em !default;
+/// One of vertical rhythm spacing values
+/// @type Length
+$space-xxl: 5.25em !default;
+/// One of vertical rhythm spacing values
+/// @type Length
+$space-xxxl: 8.5em !default;

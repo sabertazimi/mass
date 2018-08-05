@@ -1,5 +1,5 @@
 html {
-  font-size: $root-font-size;
+  font-size: 100%;
 }
 
 body {
@@ -8,4 +8,69 @@ body {
   color: $color-text;
   font-family: $font-stack;
   font-size: $text-base-size;
+}
+
+/* vertical rhythm */
+h1,
+h2,
+h3,
+h4,
+form legend {
+  margin-bottom: $space-xxs;
+  line-height: $heading-line-height;
+}
+
+p {
+  line-height: $body-line-height;
+}
+
+.text-container {
+  h2,
+  h3,
+  h4 {
+    margin-top: $space-sm;
+  }
+
+  ul,
+  ol,
+  p {
+    margin-bottom: $space-md;
+  }
+}
+
+/* text size */
+@each $text-name, $text-size in (
+  'text-xxxs': $text-xxxs,
+  'text-xxs': $text-xxs,
+  'text-xs': $text-xs,
+  'text-sm': $text-sm,
+  'text-md': $text-md,
+  'text-lg': $text-lg,
+  'text-xl': $text-xl,
+  'text-xxl': $text-xxl,
+  'text-xxxl': $text-xxxl,
+) {
+  .#{$text-name} {
+    font-size: $text-size;
+  }
+}
+
+h1 {
+  font-size: $text-xxl;
+}
+
+h2 {
+  font-size: $text-xl;
+}
+
+h3 {
+  font-size: $text-lg;
+}
+
+h4 {
+  font-size: $text-md;
+}
+
+small {
+  font-size: $text-sm;
 }
