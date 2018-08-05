@@ -8,10 +8,14 @@
 /// @author Nicolas Gallagher
 /// @link http://nicolasgallagher.com/micro-clearfix-hack/ Micro Clearfix
 @mixin clearfix {
+  &::before,
   &::after {
     display: table;
+    content: ' ';
+  }
+
+  &::after {
     clear: both;
-    content: '';
   }
 }
 
