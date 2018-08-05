@@ -1,3 +1,92 @@
+////
+/// Global variable defination
+/// @group Global
+/// @author sabertazimi
+////
+
+/// Font family stack
+/// @type List
+/// @group Typography
+$font-stack: ('Open Sans', sans-serif, serif) !default;
+
+/// CSS root element (:root/html) font size
+/// @type Number
+/// @group Typography
+$root-font-size: 62.5% !default;
+/// Base text font size
+/// @type Length
+/// @group Typography
+$text-base-size: 1.6rem !default;
+/// Scale ratio for font size
+/// @type Number
+/// @group Typography
+$text-scale-ratio: 1.2 !default;
+
+/// Text font-size group
+/// @type Length
+/// @group Typography
+$text-xxxs: ($text-base-size / ($text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio));
+/// Text font-size group
+/// @type Length
+/// @group Typography
+$text-xxs: ($text-base-size / ($text-scale-ratio * $text-scale-ratio * $text-scale-ratio));
+/// Text font-size group
+/// @type Length
+/// @group Typography
+$text-xs: ($text-base-size / ($text-scale-ratio * $text-scale-ratio));
+/// Text font-size group
+/// @type Length
+/// @group Typography
+$text-sm: ($text-base-size / $text-scale-ratio);
+/// Text font-size group
+/// @type Length
+/// @group Typography
+$text-md: ($text-base-size * $text-scale-ratio);
+/// Text font-size group
+/// @type Length
+/// @group Typography
+$text-lg: ($text-base-size * $text-scale-ratio * $text-scale-ratio);
+/// Text font-size group
+/// @type Length
+/// @group Typography
+$text-xl: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio);
+/// Text font-size group
+/// @type Length
+/// @group Typography
+$text-xxl: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio);
+/// Text font-size group
+/// @type Length
+/// @group Typography
+$text-xxxl: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio);
+/// Text font-size group
+/// @type Length
+/// @group Typography
+
+/// One of color palette
+/// @type Color
+/// @group Color
+$color-sexy: #fa6acc !default;
+/// One of color palette
+/// @type Color
+/// @group Color
+$color-glamour: #f02a52 !default;
+/// One of color palette
+/// @type Color
+/// @group Color
+$color-sky: #09a6e4 !default;
+/// One of color palette
+/// @type Color
+/// @group Color
+$color-white: #fff !default;
+/// One of color palette
+/// @type Color
+/// @group Color
+$color-black: #000 !default;
+/// Color for text
+/// @type Color
+/// @group Color
+$color-text: $color-black !default;
+
 /// Container's maximum width
 /// @type Length
 $max-width: 1024px !default;
@@ -23,14 +112,3 @@ $z-indexes: (
   'below': -1,
 ) !default;
 
-
-/// Colors map
-/// @access private
-/// @type Map
-/// @prop {String} key - Color's name
-/// @prop {Color} value - Color's value
-$colors: (
-  sexy: #fa6acc,
-  glamour: #f02a52,
-  sky: #09a6e4
-) !default;

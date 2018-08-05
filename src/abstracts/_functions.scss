@@ -1,3 +1,9 @@
+////
+/// Global function helpers
+/// @group Global
+/// @author sabertazimi
+////
+
 /// Get a z-index value from a layer name
 /// @author Sass Guidelines
 /// @access public
@@ -12,22 +18,6 @@
   }
 
   @return map-get($z-indexes, $layer);
-}
-
-/// Get a color value from a color name
-/// @author Sass Guidelines
-/// @access public
-/// @param {String} $color - Color's name
-/// @return {Color}
-/// @require $colors
-@function color($key) {
-  @if not map-has-key($colors, $key) {
-    @error 'There is no color named `#{$key}` in $colors. '
-      + 'Color should be one of #{map-keys($colors)}.';
-    @return null;
-  }
-
-  @return map-get($colors, $key);
 }
 
 /// Slightly lighten a color
