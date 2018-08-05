@@ -13,7 +13,7 @@
     background-color: $color;
 
     @include bem-on-event {
-      color: $color;
+      background-color: $color;
     }
   }
 }
