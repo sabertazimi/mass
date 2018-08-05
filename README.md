@@ -9,6 +9,13 @@ A minimal sass-based UI library
 - `build`: for `exmaples` building result
 - `lib`: for `src` building result (publish to npm)
 
+## Development
+
+```bash
+npm install
+npm start
+```
+
 ## Reference
 
 - [Sass Boilerplate](https://github.com/HugoGiraudel/sass-boilerplate)
