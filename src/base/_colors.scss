@@ -1,0 +1,27 @@
+@each $color-list, $selector in $color-lists {
+  $color: map-get($color-list , '7');
+
+  .text-#{$selector} {
+    color: $color;
+  }
+
+  .bg-#{$selector} {
+    background-color: $color;
+  }
+}
+
+.text-white {
+  color: $color-white;
+}
+
+.text-black {
+  color: $color-black;
+}
+
+.bg-white {
+  background-color: $color-white;
+}
+
+.bg-black {
+  background-color: $color-black;
+}
