@@ -1,64 +1,20 @@
-$darkyan: #008b8b;
-$darkorange: #ff8c00;
-$white: #fff;
-$black: #000;
-$red: #f00;
-
-@mixin text-center($align: center) {
-  text-align: $align;
+*,
+*::before,
+*::after {
+  transition: all 0.3s;
 }
 
 header,
 footer,
 section,
 h1 {
-  @include text-center;
+  text-align: center;
 }
 
 header {
-  background-color: $darkyan;
-  color: $white;
-}
-
-section {
-  height: 30vh;
-  
-  h2 {
-    line-height: 30vh;
-  }
+  padding: 1rem;
 }
 
 footer {
   padding: 1rem;
-  background-color: $black;
-  color: $white;
-  
-  small span {
-    color: $red;
-  }
-  
-  a {
-    position: relative;
-    padding-bottom: 0.5rem;
-    color: $darkorange;
-    text-decoration: none;
-    
-    
-  }
-  
-  a::after {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transition: all 0.3s;
-    width: 0%;
-    height: 0.2rem;
-    background-color: $darkorange;
-    content: '';
-  }
-
-  a:hover::after {
-    left: 0;
-    width: 100%;
-  }
 }
