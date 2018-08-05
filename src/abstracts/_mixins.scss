@@ -36,6 +36,25 @@
   }
 }
 
+/// BEM style event wrapper
+/// @param {Bool} $self [false] - Whether or not to include current selector
+@mixin bem-on-event($self: false) {
+  @if $self {
+    &,
+    &--hover:hover,
+    &--active:active,
+    &--focus:focus {
+      @content;
+    }
+  } @else {
+    &--hover:hover,
+    &--active:active,
+    &--focus:focus {
+      @content;
+    }
+  }
+}
+
 /// Mixin helper to output vendor prefixes
 /// @access public
 /// @author Hugo Giraudel

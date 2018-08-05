@@ -3,25 +3,49 @@
 
   .text-#{$selector} {
     color: $color;
+
+    @include bem-on-event {
+      color: $color;
+    }
   }
 
   .bg-#{$selector} {
     background-color: $color;
+
+    @include bem-on-event {
+      color: $color;
+    }
   }
 }
 
 .text-white {
   color: $color-white;
+
+  @include bem-on-event {
+    color: $color-white;
+  }
 }
 
 .text-black {
   color: $color-black;
+
+  @include bem-on-event {
+    color: $color-black;
+  }
 }
 
 .bg-white {
   background-color: $color-white;
+
+  @include bem-on-event {
+    background-color: $color-white;
+  }
 }
 
 .bg-black {
   background-color: $color-black;
+
+  @include bem-on-event {
+    background-color: $color-black;
+  }
 }
