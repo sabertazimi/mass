@@ -9,7 +9,7 @@
     "lib": "cross-env NODE_ENV=production webpack --mode production && rm -fr ./lib/mass.js && rm -fr ./lib/mass.min.js",
     "examples": "cross-env NODE_ENV=production webpack --mode production --config webpack.examples.config.js",
     "docs": "sassdoc ./src --verbose",
-    "gh-pages": "npm run examples && npm run doc",
+    "gh-pages": "npm run examples && npm run docs",
     "lint": "stylelint **/*.scss && eslint --ext .js --ext .jsx ./examples/"
   },
   "repository": {
