@@ -1,3 +1,21 @@
+/* color default config */
+h1,
+h2,
+h3,
+h4,
+form legend {
+  color: $color-text-heading;
+}
+
+a {
+  color: $color-link;
+
+  &:visited {
+    color: $color-link-visited;
+  }
+}
+
+/* color helper class */
 @each $color-list, $selector in $color-lists {
   $color: map-get($color-list , '7');
 

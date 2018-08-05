@@ -465,11 +465,11 @@ $color-orange: map-get($color-orange-list, '7') !default;
 /// White color
 /// @access public
 /// @type Color
-$color-white: #fff;
+$color-white: #fff !default;
 /// Black color
 /// @access public
 /// @type Color
-$color-black: #000;
+$color-black: #000 !default;
 
 /// Primary color
 /// @type Color
@@ -482,7 +482,7 @@ $color-text: $color-gray-8 !default;
 $color-text-heading: $color-black !default;
 /// Color for link text
 /// @type Color
-$color-link: $color-primary !default;
+$color-link: $color-orange !default;
 /// Color for visited link text
 /// @type Color
-$color-link-visited: $color-black !default;
+$color-link-visited: $color-blue !default;
