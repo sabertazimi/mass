@@ -1,0 +1,488 @@
+////
+/// Global color palette from `yeun/open-color`
+/// applied small modification by `sabertazimi`
+/// @group Color
+/// @author yeun
+/// @author sabertazimi
+/// @link https://yeun.github.io/open-color
+////
+
+/// Color palette list
+/// @access private
+/// @type Map
+/// @prop {String} key - color depth
+/// @prop {Color} value - color value
+$color-gray-list: (
+  '0': #f8f9fa,
+  '1': #f1f3f5,
+  '2': #e9ecef,
+  '3': #dee2e6,
+  '4': #ced4da,
+  '5': #adb5bd,
+  '6': #868e96,
+  '7': #495057,
+  '8': #343a40,
+  '9': #212529
+) !default;
+
+$color-gray-0: map-get($color-gray-list, '0') !default;
+$color-gray-1: map-get($color-gray-list, '1') !default;
+$color-gray-2: map-get($color-gray-list, '2') !default;
+$color-gray-3: map-get($color-gray-list, '3') !default;
+$color-gray-4: map-get($color-gray-list, '4') !default;
+$color-gray-5: map-get($color-gray-list, '5') !default;
+$color-gray-6: map-get($color-gray-list, '6') !default;
+$color-gray-7: map-get($color-gray-list, '7') !default;
+$color-gray-8: map-get($color-gray-list, '8') !default;
+$color-gray-9: map-get($color-gray-list, '9') !default;
+
+/// Color palette list
+/// @access private
+/// @type Map
+/// @prop {String} key - color depth
+/// @prop {Color} value - color value
+$color-red-list: (
+  '0': #fff5f5,
+  '1': #ffe3e3,
+  '2': #ffc9c9,
+  '3': #ffa8a8,
+  '4': #ff8787,
+  '5': #ff6b6b,
+  '6': #fa5252,
+  '7': #f03e3e,
+  '8': #e03131,
+  '9': #c92a2a
+) !default;
+
+$color-red-0: map-get($color-red-list, '0') !default;
+$color-red-1: map-get($color-red-list, '1') !default;
+$color-red-2: map-get($color-red-list, '2') !default;
+$color-red-3: map-get($color-red-list, '3') !default;
+$color-red-4: map-get($color-red-list, '4') !default;
+$color-red-5: map-get($color-red-list, '5') !default;
+$color-red-6: map-get($color-red-list, '6') !default;
+$color-red-7: map-get($color-red-list, '7') !default;
+$color-red-8: map-get($color-red-list, '8') !default;
+$color-red-9: map-get($color-red-list, '9') !default;
+
+/// Color palette list
+/// @access private
+/// @type Map
+/// @prop {String} key - color depth
+/// @prop {Color} value - color value
+$color-pink-list: (
+  '0': #fff0f6,
+  '1': #ffdeeb,
+  '2': #fcc2d7,
+  '3': #faa2c1,
+  '4': #f783ac,
+  '5': #f06595,
+  '6': #e64980,
+  '7': #d6336c,
+  '8': #c2255c,
+  '9': #a61e4d
+) !default;
+
+$color-pink-0: map-get($color-pink-list, '0') !default;
+$color-pink-1: map-get($color-pink-list, '1') !default;
+$color-pink-2: map-get($color-pink-list, '2') !default;
+$color-pink-3: map-get($color-pink-list, '3') !default;
+$color-pink-4: map-get($color-pink-list, '4') !default;
+$color-pink-5: map-get($color-pink-list, '5') !default;
+$color-pink-6: map-get($color-pink-list, '6') !default;
+$color-pink-7: map-get($color-pink-list, '7') !default;
+$color-pink-8: map-get($color-pink-list, '8') !default;
+$color-pink-9: map-get($color-pink-list, '9') !default;
+
+/// Color palette list
+/// @access private
+/// @type Map
+/// @prop {String} key - color depth
+/// @prop {Color} value - color value
+$color-grape-list: (
+  '0': #f8f0fc,
+  '1': #f3d9fa,
+  '2': #eebefa,
+  '3': #e599f7,
+  '4': #da77f2,
+  '5': #cc5de8,
+  '6': #be4bdb,
+  '7': #ae3ec9,
+  '8': #9c36b5,
+  '9': #862e9c
+) !default;
+
+$color-grape-0: map-get($color-grape-list, '0') !default;
+$color-grape-1: map-get($color-grape-list, '1') !default;
+$color-grape-2: map-get($color-grape-list, '2') !default;
+$color-grape-3: map-get($color-grape-list, '3') !default;
+$color-grape-4: map-get($color-grape-list, '4') !default;
+$color-grape-5: map-get($color-grape-list, '5') !default;
+$color-grape-6: map-get($color-grape-list, '6') !default;
+$color-grape-7: map-get($color-grape-list, '7') !default;
+$color-grape-8: map-get($color-grape-list, '8') !default;
+$color-grape-9: map-get($color-grape-list, '9') !default;
+
+/// Color palette list
+/// @access private
+/// @type Map
+/// @prop {String} key - color depth
+/// @prop {Color} value - color value
+$color-violet-list: (
+  '0': #f3f0ff,
+  '1': #e5dbff,
+  '2': #d0bfff,
+  '3': #b197fc,
+  '4': #9775fa,
+  '5': #845ef7,
+  '6': #7950f2,
+  '7': #7048e8,
+  '8': #6741d9,
+  '9': #5f3dc4
+) !default;
+
+$color-violet-0: map-get($color-violet-list, '0') !default;
+$color-violet-1: map-get($color-violet-list, '1') !default;
+$color-violet-2: map-get($color-violet-list, '2') !default;
+$color-violet-3: map-get($color-violet-list, '3') !default;
+$color-violet-4: map-get($color-violet-list, '4') !default;
+$color-violet-5: map-get($color-violet-list, '5') !default;
+$color-violet-6: map-get($color-violet-list, '6') !default;
+$color-violet-7: map-get($color-violet-list, '7') !default;
+$color-violet-8: map-get($color-violet-list, '8') !default;
+$color-violet-9: map-get($color-violet-list, '9') !default;
+
+/// Color palette list
+/// @access private
+/// @type Map
+/// @prop {String} key - color depth
+/// @prop {Color} value - color value
+$color-indigo-list: (
+  '0': #edf2ff,
+  '1': #dbe4ff,
+  '2': #bac8ff,
+  '3': #91a7ff,
+  '4': #748ffc,
+  '5': #5c7cfa,
+  '6': #4c6ef5,
+  '7': #4263eb,
+  '8': #3b5bdb,
+  '9': #364fc7
+) !default;
+
+$color-indigo-0: map-get($color-indigo-list, '0') !default;
+$color-indigo-1: map-get($color-indigo-list, '1') !default;
+$color-indigo-2: map-get($color-indigo-list, '2') !default;
+$color-indigo-3: map-get($color-indigo-list, '3') !default;
+$color-indigo-4: map-get($color-indigo-list, '4') !default;
+$color-indigo-5: map-get($color-indigo-list, '5') !default;
+$color-indigo-6: map-get($color-indigo-list, '6') !default;
+$color-indigo-7: map-get($color-indigo-list, '7') !default;
+$color-indigo-8: map-get($color-indigo-list, '8') !default;
+$color-indigo-9: map-get($color-indigo-list, '9') !default;
+
+/// Color palette list
+/// @access private
+/// @type Map
+/// @prop {String} key - color depth
+/// @prop {Color} value - color value
+$color-blue-list: (
+  '0': #e7f5ff,
+  '1': #d0ebff,
+  '2': #a5d8ff,
+  '3': #74c0fc,
+  '4': #4dabf7,
+  '5': #339af0,
+  '6': #228be6,
+  '7': #1c7ed6,
+  '8': #1971c2,
+  '9': #1864ab
+) !default;
+
+$color-blue-0: map-get($color-blue-list, '0') !default;
+$color-blue-1: map-get($color-blue-list, '1') !default;
+$color-blue-2: map-get($color-blue-list, '2') !default;
+$color-blue-3: map-get($color-blue-list, '3') !default;
+$color-blue-4: map-get($color-blue-list, '4') !default;
+$color-blue-5: map-get($color-blue-list, '5') !default;
+$color-blue-6: map-get($color-blue-list, '6') !default;
+$color-blue-7: map-get($color-blue-list, '7') !default;
+$color-blue-8: map-get($color-blue-list, '8') !default;
+$color-blue-9: map-get($color-blue-list, '9') !default;
+
+/// Color palette list
+/// @access private
+/// @type Map
+/// @prop {String} key - color depth
+/// @prop {Color} value - color value
+$color-cyan-list: (
+  '0': #e3fafc,
+  '1': #c5f6fa,
+  '2': #99e9f2,
+  '3': #66d9e8,
+  '4': #3bc9db,
+  '5': #22b8cf,
+  '6': #15aabf,
+  '7': #1098ad,
+  '8': #0c8599,
+  '9': #0b7285
+) !default;
+
+$color-cyan-0: map-get($color-cyan-list, '0') !default;
+$color-cyan-1: map-get($color-cyan-list, '1') !default;
+$color-cyan-2: map-get($color-cyan-list, '2') !default;
+$color-cyan-3: map-get($color-cyan-list, '3') !default;
+$color-cyan-4: map-get($color-cyan-list, '4') !default;
+$color-cyan-5: map-get($color-cyan-list, '5') !default;
+$color-cyan-6: map-get($color-cyan-list, '6') !default;
+$color-cyan-7: map-get($color-cyan-list, '7') !default;
+$color-cyan-8: map-get($color-cyan-list, '8') !default;
+$color-cyan-9: map-get($color-cyan-list, '9') !default;
+
+/// Color palette list
+/// @access private
+/// @type Map
+/// @prop {String} key - color depth
+/// @prop {Color} value - color value
+$color-teal-list: (
+  '0': #e6fcf5,
+  '1': #c3fae8,
+  '2': #96f2d7,
+  '3': #63e6be,
+  '4': #38d9a9,
+  '5': #20c997,
+  '6': #12b886,
+  '7': #0ca678,
+  '8': #099268,
+  '9': #087f5b
+) !default;
+
+$color-teal-0: map-get($color-teal-list, '0') !default;
+$color-teal-1: map-get($color-teal-list, '1') !default;
+$color-teal-2: map-get($color-teal-list, '2') !default;
+$color-teal-3: map-get($color-teal-list, '3') !default;
+$color-teal-4: map-get($color-teal-list, '4') !default;
+$color-teal-5: map-get($color-teal-list, '5') !default;
+$color-teal-6: map-get($color-teal-list, '6') !default;
+$color-teal-7: map-get($color-teal-list, '7') !default;
+$color-teal-8: map-get($color-teal-list, '8') !default;
+$color-teal-9: map-get($color-teal-list, '9') !default;
+
+/// Color palette list
+/// @access private
+/// @type Map
+/// @prop {String} key - color depth
+/// @prop {Color} value - color value
+$color-green-list: (
+  '0': #ebfbee,
+  '1': #d3f9d8,
+  '2': #b2f2bb,
+  '3': #8ce99a,
+  '4': #69db7c,
+  '5': #51cf66,
+  '6': #40c057,
+  '7': #37b24d,
+  '8': #2f9e44,
+  '9': #2b8a3e
+) !default;
+
+$color-green-0: map-get($color-green-list, '0') !default;
+$color-green-1: map-get($color-green-list, '1') !default;
+$color-green-2: map-get($color-green-list, '2') !default;
+$color-green-3: map-get($color-green-list, '3') !default;
+$color-green-4: map-get($color-green-list, '4') !default;
+$color-green-5: map-get($color-green-list, '5') !default;
+$color-green-6: map-get($color-green-list, '6') !default;
+$color-green-7: map-get($color-green-list, '7') !default;
+$color-green-8: map-get($color-green-list, '8') !default;
+$color-green-9: map-get($color-green-list, '9') !default;
+
+/// Color palette list
+/// @access private
+/// @type Map
+/// @prop {String} key - color depth
+/// @prop {Color} value - color value
+$color-lime-list: (
+  '0': #f4fce3,
+  '1': #e9fac8,
+  '2': #d8f5a2,
+  '3': #c0eb75,
+  '4': #a9e34b,
+  '5': #94d82d,
+  '6': #82c91e,
+  '7': #74b816,
+  '8': #66a80f,
+  '9': #5c940d
+) !default;
+
+$color-lime-0: map-get($color-lime-list, '0') !default;
+$color-lime-1: map-get($color-lime-list, '1');
+$color-lime-2: map-get($color-lime-list, '2') !default;
+$color-lime-3: map-get($color-lime-list, '3') !default;
+$color-lime-4: map-get($color-lime-list, '4') !default;
+$color-lime-5: map-get($color-lime-list, '5') !default;
+$color-lime-6: map-get($color-lime-list, '6') !default;
+$color-lime-7: map-get($color-lime-list, '7') !default;
+$color-lime-8: map-get($color-lime-list, '8') !default;
+$color-lime-9: map-get($color-lime-list, '9') !default;
+
+/// Color palette list
+/// @access private
+/// @type Map
+/// @prop {String} key - color depth
+/// @prop {Color} value - color value
+$color-yellow-list: (
+  '0': #fff9db,
+  '1': #fff3bf,
+  '2': #ffec99,
+  '3': #ffe066,
+  '4': #ffd43b,
+  '5': #fcc419,
+  '6': #fab005,
+  '7': #f59f00,
+  '8': #f08c00,
+  '9': #e67700
+) !default;
+
+$color-yellow-0: map-get($color-yellow-list, '0') !default;
+$color-yellow-1: map-get($color-yellow-list, '1') !default;
+$color-yellow-2: map-get($color-yellow-list, '2') !default;
+$color-yellow-3: map-get($color-yellow-list, '3') !default;
+$color-yellow-4: map-get($color-yellow-list, '4') !default;
+$color-yellow-5: map-get($color-yellow-list, '5') !default;
+$color-yellow-6: map-get($color-yellow-list, '6') !default;
+$color-yellow-7: map-get($color-yellow-list, '7') !default;
+$color-yellow-8: map-get($color-yellow-list, '8') !default;
+$color-yellow-9: map-get($color-yellow-list, '9') !default;
+
+/// Color palette list
+/// @access private
+/// @type Map
+/// @prop {String} key - color depth
+/// @prop {Color} value - color value
+$color-orange-list: (
+  '0': #fff4e6,
+  '1': #ffe8cc,
+  '2': #ffd8a8,
+  '3': #ffc078,
+  '4': #ffa94d,
+  '5': #ff922b,
+  '6': #fd7e14,
+  '7': #f76707,
+  '8': #e8590c,
+  '9': #d9480f
+) !default;
+
+$color-orange-0: map-get($color-orange-list, '0') !default;
+$color-orange-1: map-get($color-orange-list, '1') !default;
+$color-orange-2: map-get($color-orange-list, '2') !default;
+$color-orange-3: map-get($color-orange-list, '3') !default;
+$color-orange-4: map-get($color-orange-list, '4') !default;
+$color-orange-5: map-get($color-orange-list, '5') !default;
+$color-orange-6: map-get($color-orange-list, '6') !default;
+$color-orange-7: map-get($color-orange-list, '7') !default;
+$color-orange-8: map-get($color-orange-list, '8') !default;
+$color-orange-9: map-get($color-orange-list, '9') !default;
+
+/// total number of color palette
+/// @access private
+/// @type Number
+$color-spectrum: 9;
+
+/// Color palette lists
+/// @access private
+/// @type Map
+/// @prop {Map} key - color list map
+/// @prop {String} value - color list name
+$color-lists: (
+  $color-gray-list: 'gray',
+  $color-red-list: 'red',
+  $color-pink-list: 'pink',
+  $color-grape-list: 'grape',
+  $color-violet-list: 'violet',
+  $color-indigo-list: 'indigo',
+  $color-blue-list: 'blue',
+  $color-cyan-list: 'cyan',
+  $color-teal-list: 'teal',
+  $color-green-list: 'green',
+  $color-lime-list: 'lime',
+  $color-yellow-list: 'yellow',
+  $color-orange-list: 'orange'
+) !default;
+
+/// Gray color
+/// @access public
+/// @type Color
+$color-gray: map-get($color-gray-list, '7') !default;
+/// Red color
+/// @access public
+/// @type Color
+$color-red: map-get($color-red-list, '7') !default;
+/// Pink color
+/// @access public
+/// @type Color
+$color-pink: map-get($color-pink-list, '7') !default;
+/// Grape color
+/// @access public
+/// @type Color
+$color-grape: map-get($color-grape-list, '7') !default;
+/// Violet color
+/// @access public
+/// @type Color
+$color-violet: map-get($color-violet-list, '7') !default;
+/// Indigo color
+/// @access public
+/// @type Color
+$color-indigo: map-get($color-indigo-list, '7') !default;
+/// Blue color
+/// @access public
+/// @type Color
+$color-blue: map-get($color-blue-list, '7') !default;
+/// Cyan color
+/// @access public
+/// @type Color
+$color-cyan: map-get($color-cyan-list, '7') !default;
+/// Teal color
+/// @access public
+/// @type Color
+$color-teal: map-get($color-teal-list, '7') !default;
+/// Green color
+/// @access public
+/// @type Color
+$color-green: map-get($color-green-list, '7') !default;
+/// Lime color
+/// @access public
+/// @type Color
+$color-lime: map-get($color-lime-list, '7') !default;
+/// Yellow color
+/// @access public
+/// @type Color
+$color-yellow: map-get($color-yellow-list, '7') !default;
+/// Orange color
+/// @access public
+/// @type Color
+$color-orange: map-get($color-orange-list, '7') !default;
+/// White color
+/// @access public
+/// @type Color
+$color-white: #fff;
+/// Black color
+/// @access public
+/// @type Color
+$color-black: #000;
+
+/// Primary color
+/// @type Color
+$color-primary: $color-blue;
+/// Color for paragraph normal text
+/// @type Color
+$color-text: $color-gray-9 !default;
+/// Color for heading text
+/// @type Color
+$color-text-heading: $color-black !default;
+/// Color for link text
+/// @type Color
+$color-link: $color-primary !default;
+/// Color for visited link text
+/// @type Color
+$color-link-visited: $color-black !default;
