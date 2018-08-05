@@ -53,3 +53,14 @@
 
   #{$property}: $value;
 }
+
+/// Mixin helper to center line-block or text paragraph
+/// @access public
+/// @param {String} $align [center] - alignment direction
+/// @example scss - Usage
+///  .text-center {
+///    @include text-center
+///  }
+@mixin text-center($align: center) {
+  text-align: $align;
+}
