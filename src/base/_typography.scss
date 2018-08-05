@@ -1,13 +1,14 @@
 html {
-  font-size: 100%;
+  font-size: $root-scale-ratio;
 }
 
 body {
+  @include font-size($text-base-size);
+
   width: 100%;
   height: 100%;
   color: $color-text;
   font-family: $font-stack;
-  font-size: $text-base-size;
 }
 
 /* vertical rhythm */
@@ -51,26 +52,26 @@ p {
   'text-xxxl': $text-xxxl,
 ) {
   .#{$text-name} {
-    font-size: $text-size;
+    @include font-size($text-size);
   }
 }
 
 h1 {
-  font-size: $text-xxl;
+  @include font-size($text-xxl);
 }
 
 h2 {
-  font-size: $text-xl;
+  @include font-size($text-xl);
 }
 
 h3 {
-  font-size: $text-lg;
+  @include font-size($text-lg);
 }
 
 h4 {
-  font-size: $text-md;
+  @include font-size($text-md);
 }
 
 small {
-  font-size: $text-sm;
+  @include font-size($text-sm);
 }

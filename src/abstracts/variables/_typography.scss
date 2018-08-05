@@ -8,6 +8,10 @@
 /// @type List
 $font-stack: ('Open Sans', sans-serif, serif) !default;
 
+/// Root text font scale ratio
+/// @type Number
+$root-scale-ratio: 100% !default;
+$root-base-size: 16px * ($root-scale-ratio / 100%) !default;
 /// Base text font size
 /// @type Length
 $text-base-size: 1rem !default;

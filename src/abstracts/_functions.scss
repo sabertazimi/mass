@@ -26,6 +26,7 @@
 /// @param {Color} $color - color to tint
 /// @param {Number} $percentage - percentage of `$color` in returned color
 /// @return {Color}
+/// @group Color
 @function tint($color, $percentage) {
   @return mix(white, $color, $percentage);
 }
@@ -36,6 +37,7 @@
 /// @param {Color} $color - color to shade
 /// @param {Number} $percentage - percentage of `$color` in returned color
 /// @return {Color}
+/// @group Color
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
 }
@@ -46,4 +48,22 @@
 @function throw($log) {
   @error $log;
   @return false;
+}
+
+
+/// rem2px helper function
+/// @access public
+/// @param {Length} $rem - rem to px
+/// @return {Length} px
+/// @require $root-base-size
+/// @group Typography
+@function rem2px($rem) {
+  @if unitless($rem) {
+    @warn 'Assuming #{$rem} to be in rems, attempting to convert it into rems.';
+    @return null;
+  } @else if unit($rem) == px {
+    @return $rem;
+  }
+
+  @return $root-base-size * ($rem / 1rem);
 }

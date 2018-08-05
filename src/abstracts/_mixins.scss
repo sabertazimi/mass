@@ -83,3 +83,12 @@
 @mixin text-center($align: center) {
   text-align: $align;
 }
+
+/// font size rem to px fallback
+/// @access public
+/// @param {Length} $rem [1rem] - font size with `rem` length
+/// @group Typography
+@mixin font-size($rem: 1rem) {
+  font-size: rem2px($rem);
+  font-size: $rem;
+}
