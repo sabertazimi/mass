@@ -63,6 +63,9 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
+    alias: {
+      mass: path.resolve(__dirname, 'src'),
+    },
   },
   devtool: 'source-map',
 };
