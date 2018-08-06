@@ -17,7 +17,7 @@ a {
 
 /* color helper class */
 @each $color-list, $selector in $color-lists {
-  $primary-color: map-get($color-list , '7');
+  $primary-color: map-get($color-list , $color-primary-depth);
 
   .text-#{$selector} {
     color: $primary-color;

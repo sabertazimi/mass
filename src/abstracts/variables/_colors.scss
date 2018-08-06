@@ -410,58 +410,62 @@ $color-lists: (
   $color-orange-list: 'orange'
 ) !default;
 
+/// Color default depth
+/// @access private
+/// @type String
+$color-primary-depth: '7';
 /// Gray color
 /// @access public
 /// @type Color
-$color-gray: map-get($color-gray-list, '7') !default;
+$color-gray: map-get($color-gray-list, $color-primary-depth) !default;
 /// Red color
 /// @access public
 /// @type Color
-$color-red: map-get($color-red-list, '7') !default;
+$color-red: map-get($color-red-list, $color-primary-depth) !default;
 /// Pink color
 /// @access public
 /// @type Color
-$color-pink: map-get($color-pink-list, '7') !default;
+$color-pink: map-get($color-pink-list, $color-primary-depth) !default;
 /// Grape color
 /// @access public
 /// @type Color
-$color-grape: map-get($color-grape-list, '7') !default;
+$color-grape: map-get($color-grape-list, $color-primary-depth) !default;
 /// Violet color
 /// @access public
 /// @type Color
-$color-violet: map-get($color-violet-list, '7') !default;
+$color-violet: map-get($color-violet-list, $color-primary-depth) !default;
 /// Indigo color
 /// @access public
 /// @type Color
-$color-indigo: map-get($color-indigo-list, '7') !default;
+$color-indigo: map-get($color-indigo-list, $color-primary-depth) !default;
 /// Blue color
 /// @access public
 /// @type Color
-$color-blue: map-get($color-blue-list, '7') !default;
+$color-blue: map-get($color-blue-list, $color-primary-depth) !default;
 /// Cyan color
 /// @access public
 /// @type Color
-$color-cyan: map-get($color-cyan-list, '7') !default;
+$color-cyan: map-get($color-cyan-list, $color-primary-depth) !default;
 /// Teal color
 /// @access public
 /// @type Color
-$color-teal: map-get($color-teal-list, '7') !default;
+$color-teal: map-get($color-teal-list, $color-primary-depth) !default;
 /// Green color
 /// @access public
 /// @type Color
-$color-green: map-get($color-green-list, '7') !default;
+$color-green: map-get($color-green-list, $color-primary-depth) !default;
 /// Lime color
 /// @access public
 /// @type Color
-$color-lime: map-get($color-lime-list, '7') !default;
+$color-lime: map-get($color-lime-list, $color-primary-depth) !default;
 /// Yellow color
 /// @access public
 /// @type Color
-$color-yellow: map-get($color-yellow-list, '7') !default;
+$color-yellow: map-get($color-yellow-list, $color-primary-depth) !default;
 /// Orange color
 /// @access public
 /// @type Color
-$color-orange: map-get($color-orange-list, '7') !default;
+$color-orange: map-get($color-orange-list, $color-primary-depth) !default;
 /// White color
 /// @access public
 /// @type Color
