@@ -36,3 +36,7 @@
 .text-center {
   @include text-center;
 }
+
+.underline {
+  @include underline;
+}

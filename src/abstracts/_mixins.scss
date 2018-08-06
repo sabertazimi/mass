@@ -149,3 +149,26 @@
 @mixin text-center($align: center) {
   text-align: $align;
 }
+
+/// Add underline animation to element
+/// Require that set element to `position: non-static`
+/// @access public
+/// @param {Color} $color [$color-primary] - color of underline
+/// @param {Length} $height [3px] - height of underline
+@mixin underline($color: $color-primary, $height: 3px) {
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: all 0.2s;
+    width: 0;
+    height: $height;
+    background-color: $color;
+    content: '';
+  }
+
+  &:hover::after {
+    left: 0;
+    width: 100%;
+  }
+}
