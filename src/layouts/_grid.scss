@@ -10,8 +10,13 @@ $grid-column-nums: 12 !default;
 }
 
 .grid-container {
-  @include container;
   @include clearfix;
+  @include container;
+
+  @include respond-to(small-only) {
+    padding-right: $space-sm;
+    padding-left: $space-sm;
+  }
 }
 
 .row {

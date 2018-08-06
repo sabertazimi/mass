@@ -4,40 +4,6 @@
 /// @author sabertazimi
 ////
 
-/// Helper to clear inner floats
-/// @author Nicolas Gallagher
-/// @link http://nicolasgallagher.com/micro-clearfix-hack/ Micro Clearfix
-@mixin clearfix {
-  &::before,
-  &::after {
-    display: table;
-    content: ' ';
-  }
-
-  &::after {
-    clear: both;
-  }
-}
-
-/// default container mixin
-/// @param {Length} $param-max-width [$max-width] - max width of container
-@mixin container($param-max-width: $max-width) {
-  display: block;
-  width: 100%;
-  max-width: $param-max-width;
-}
-
-/// Mixin helper to center line-block or text paragraph
-/// @access public
-/// @param {String} $align [center] - alignment direction
-/// @example scss - Usage
-///  .text-center {
-///    @include text-center
-///  }
-@mixin text-center($align: center) {
-  text-align: $align;
-}
-
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector
@@ -148,4 +114,38 @@
   } @else {
     @error 'Invalid device size range.';
   }
+}
+
+/// Helper to clear inner floats
+/// @author Nicolas Gallagher
+/// @link http://nicolasgallagher.com/micro-clearfix-hack/ Micro Clearfix
+@mixin clearfix {
+  &::before,
+  &::after {
+    display: table;
+    content: ' ';
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+/// default container mixin
+/// @param {Length} $param-max-width [$max-width] - max width of container
+@mixin container($param-max-width: $max-width) {
+  display: block;
+  width: 100%;
+  max-width: $param-max-width;
+}
+
+/// Mixin helper to center line-block or text paragraph
+/// @access public
+/// @param {String} $align [center] - alignment direction
+/// @example scss - Usage
+///  .text-center {
+///    @include text-center
+///  }
+@mixin text-center($align: center) {
+  text-align: $align;
 }

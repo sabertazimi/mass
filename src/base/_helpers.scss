@@ -26,6 +26,11 @@
 
 .text-container {
   @include container;
+
+  @include respond-to(small-only) {
+    padding-right: $space-sm;
+    padding-left: $space-sm;
+  }
 }
 
 .text-center {
