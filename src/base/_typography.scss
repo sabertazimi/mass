@@ -25,6 +25,11 @@ p {
   line-height: $body-line-height;
 }
 
+b,
+strong {
+  font-weight: bold;
+}
+
 .text-container {
   h2,
   h3,
@@ -36,6 +41,25 @@ p {
   ol,
   p {
     margin-bottom: $space-md;
+  }
+
+  ul,
+  ol {
+    padding-left: $space-sm;
+    list-style-position: inside;
+  }
+
+  ul {
+    list-style-type: circle;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul li,
+  ol li {
+    line-height: $body-line-height;
   }
 }
 
