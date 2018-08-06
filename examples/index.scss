@@ -1,3 +1,5 @@
+@import '~mass/abstracts/variables';
+
 *,
 *::before,
 *::after {
@@ -6,15 +8,6 @@
 
 header,
 footer,
-section,
-h1 {
-  text-align: center;
-}
-
-header {
-  padding: 1rem;
-}
-
-footer {
-  padding: 1rem;
+.container {
+  padding: $space-md;
 }
