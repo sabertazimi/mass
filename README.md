@@ -16,6 +16,22 @@ npm install
 npm start
 ```
 
+## Component
+
+### Container
+
+#### Normal Container
+
+`.container`
+
+#### Text Container
+
+`.text-container`
+
+#### Grid Container
+
+`.grid-container`
+
 ## Reference
 
 - [Sass Boilerplate](https://github.com/HugoGiraudel/sass-boilerplate)
