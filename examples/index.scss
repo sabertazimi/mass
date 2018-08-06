@@ -1,14 +1,12 @@
 @import '~mass/abstracts/variables';
 
-*,
-*::before,
-*::after {
-  transition: all 0.3s;
-}
-
 header,
 footer {
   padding: $space-md;
+}
+
+a {
+  transition: color 0.3s;
 }
 
 .section-typo {
@@ -21,6 +19,7 @@ footer {
   background-color: $color-blue;
   color: $color-gray-0;
   text-align: center;
+  transition: background-color 0.3s;
 }
 
 .col:hover {
