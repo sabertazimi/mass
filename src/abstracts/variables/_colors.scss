@@ -387,7 +387,7 @@ $color-orange-9: map-get($color-orange-list, '9') !default;
 /// total number of color palette
 /// @access private
 /// @type Number
-$color-spectrum: 9;
+$color-spectrum: 9 !default;
 
 /// Color palette lists
 /// @access private
@@ -413,7 +413,7 @@ $color-lists: (
 /// Color default depth
 /// @access private
 /// @type String
-$color-primary-depth: '7';
+$color-primary-depth: '7' !default;
 /// Gray color
 /// @access public
 /// @type Color
