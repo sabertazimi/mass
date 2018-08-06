@@ -38,16 +38,6 @@
   text-align: $align;
 }
 
-/// @access private
-/// @type Map
-/// @prop {String} key - name of helper class
-/// @prop {Mixin} value - helper mixin
-$helper-classes: (
-  'clearfix': clearfix,
-  'container': container,
-  'text-center': text-center
-) !default;
-
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector
@@ -113,4 +103,49 @@ $helper-classes: (
 @mixin font-size($rem: 1rem) {
   font-size: rem2px($rem);
   font-size: $rem;
+}
+
+/// @media queries helper mixin
+/// @access public
+/// @param {String} $range [medium-up] - different range of device size
+@mixin respond-to($range: medium-up) {
+  @if $range == small-up {
+    @media only screen {
+      @content;
+    }
+  } @else if $range == small-only {
+    @media only screen and (max-width: nth($small-range, 2)) {
+      @content;
+    }
+  } @else if $range == medium-up {
+    @media only screen and (min-width: nth($medium-range, 1)) {
+      @content;
+    }
+  } @else if $range == medium-only {
+    @media only screen and (min-width: nth($medium-range, 1)) and (max-width: nth($medium-range, 2)) {
+      @content;
+    }
+  } @else if $range == large-up {
+    @media only screen and (min-width: nth($large-range, 1)) {
+      @content;
+    }
+  } @else if $range == large-only {
+    @media only screen and (min-width: nth($large-range, 1)) and (max-width: nth($large-range, 2)) {
+      @content;
+    }
+  } @else if $range == xlarge-up {
+    @media only screen and (min-width: nth($xlarge-range, 1)) {
+      @content;
+    }
+  } @else if $range == xlarge-only {
+    @media only screen and (min-width: nth($xlarge-range, 1)) and (max-width: nth($xlarge-range, 2)) {
+      @content;
+    }
+  } @else if $range == xxlarge-up {
+    @media only screen and (min-width: nth($xxlarge-range, 1)) {
+      @content;
+    }
+  } @else {
+    @error 'Invalid device size range.';
+  }
 }
