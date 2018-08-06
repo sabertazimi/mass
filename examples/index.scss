@@ -14,12 +14,12 @@ a {
 }
 
 .col {
+  transition: background-color 0.3s;
   padding: $space-sm;
   border: 1px solid $color-blue-3;
   background-color: $color-blue;
   color: $color-gray-0;
   text-align: center;
-  transition: background-color 0.3s;
 }
 
 .col:hover {
