@@ -17,6 +17,16 @@ $breakpoints: (
   'large': 1024px,
 ) !default;
 
+/// Small size device breakpoint
+/// @type Length
+$bp-small: map-get($breakpoints, 'small') !default;
+/// Medium size device breakpoint
+/// @type Length
+$bp-medium: map-get($breakpoints, 'medium') !default;
+/// Large size device breakpoint
+/// @type Length
+$bp-large: map-get($breakpoints, 'large') !default;
+
 /// Z-indexes map, gathering all Z layers of the application
 /// @access private
 /// @type Map
