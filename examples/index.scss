@@ -7,7 +7,22 @@
 }
 
 header,
-footer,
-.container {
+footer {
   padding: $space-md;
+}
+
+.section-typo {
+  padding-top: $space-sm;
+}
+
+.col {
+  padding: $space-sm;
+  border: 1px solid $color-blue-3;
+  background-color: $color-blue;
+  color: $color-gray-0;
+  text-align: center;
+}
+
+.col:hover {
+  background-color: $color-blue-6;
 }

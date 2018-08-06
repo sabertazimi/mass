@@ -1,0 +1,62 @@
+/// Total number of columns
+/// @type Number
+$grid-column-nums: 12 !default;
+
+/// column reset style
+@mixin column {
+  float: left;
+  width: 100% / $grid-column-nums;
+  min-height: 1px;
+}
+
+.grid-container {
+  @include container;
+  @include clearfix;
+}
+
+.row {
+  @include clearfix;
+  display: block;
+}
+
+@for $i from 1 through $grid-column-nums {
+  @include respond-to(small-only) {
+    .col-sm-#{$i} {
+      @include column;
+      width: 100% / $grid-column-nums * $i;
+    }
+  }
+
+  @include respond-to(medium-only) {
+    .col-md-#{$i} {
+      @include column;
+      width: 100% / $grid-column-nums * $i;
+    }
+  }
+  
+  @include respond-to(large-only) {
+    .col-lg-#{$i} {
+      @include column;
+      width: 100% / $grid-column-nums * $i;
+    }
+  }
+
+  @include respond-to(xlarge-only) {
+    .col-xl-#{$i} {
+      @include column;
+      width: 100% / $grid-column-nums * $i;
+    }
+  }
+
+  @include respond-to(xxlarge-up) {
+    .col-xxl-#{$i} {
+      @include column;
+      width: 100% / $grid-column-nums * $i;
+    }
+  }
+
+  .col-#{$i} {
+    @include column;
+    width: 100% / $grid-column-nums * $i;
+  }
+}
