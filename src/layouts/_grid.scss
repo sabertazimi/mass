@@ -24,6 +24,14 @@ $grid-column-nums: 12 !default;
   display: block;
 }
 
+
+@for $i from 1 through $grid-column-nums {
+  .col-#{$i} {
+    @include column;
+    width: 100% / $grid-column-nums * $i;
+  }
+}
+
 @for $i from 1 through $grid-column-nums {
   @include respond-to(small-only) {
     .col-sm-#{$i} {
@@ -58,10 +66,5 @@ $grid-column-nums: 12 !default;
       @include column;
       width: 100% / $grid-column-nums * $i;
     }
-  }
-
-  .col-#{$i} {
-    @include column;
-    width: 100% / $grid-column-nums * $i;
   }
 }
