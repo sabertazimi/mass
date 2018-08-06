@@ -35,6 +35,7 @@ npm start
 ## Reference
 
 - [Sass Boilerplate](https://github.com/HugoGiraudel/sass-boilerplate)
+- [normalize.css](https://github.com/Alsiso/normalize-zh)
 - [Typography](https://medium.com/codyhouse/create-your-design-system-part-1-typography-7c630d9092bd)
 - [Open Color](https://yeun.github.io/open-color)
 - [Media Query for Responsive Design](https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862)
