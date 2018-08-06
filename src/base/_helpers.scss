@@ -1,23 +1,4 @@
 /**
- * Clear inner floats
- */
-.clearfix::after {
-  display: table;
-  clear: both;
-  content: '';
-}
-
-/**
- * Main content containers (full-width with a maximum width)
- */
-.container {
-  width: 100%;
-  max-width: $max-width;
-  // padding-right: $padding-baseline;
-  // padding-left: $padding-baseline;
-}
-
-/**
  * Hide text while making it readable for screen readers
  */
 .hide-text {
@@ -39,4 +20,16 @@
   padding: 0;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.container {
+  @include container;
+}
+
+.text-center {
+  @include text-center;
 }

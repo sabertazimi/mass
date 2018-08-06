@@ -19,6 +19,34 @@
   }
 }
 
+/// default container mixin
+/// @param {Length} $param-max-width [$max-width] - max width of container
+@mixin container($param-max-width: $max-width) {
+  width: 100%;
+  max-width: $param-max-width;
+}
+
+/// Mixin helper to center line-block or text paragraph
+/// @access public
+/// @param {String} $align [center] - alignment direction
+/// @example scss - Usage
+///  .text-center {
+///    @include text-center
+///  }
+@mixin text-center($align: center) {
+  text-align: $align;
+}
+
+/// @access private
+/// @type Map
+/// @prop {String} key - name of helper class
+/// @prop {Mixin} value - helper mixin
+$helper-classes: (
+  'clearfix': clearfix,
+  'container': container,
+  'text-center': text-center
+) !default;
+
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector
@@ -75,17 +103,6 @@
   }
 
   #{$property}: $value;
-}
-
-/// Mixin helper to center line-block or text paragraph
-/// @access public
-/// @param {String} $align [center] - alignment direction
-/// @example scss - Usage
-///  .text-center {
-///    @include text-center
-///  }
-@mixin text-center($align: center) {
-  text-align: $align;
 }
 
 /// font size rem to px fallback
