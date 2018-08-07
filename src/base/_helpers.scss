@@ -33,10 +33,10 @@
   }
 }
 
-.text-center {
-  @include text-center;
+.text-align-center {
+  @include text-align;
 }
 
-.underline {
+.link--underline {
   @include underline;
 }

@@ -140,19 +140,19 @@
   margin: 0 auto;
 }
 
-/// Mixin helper to center line-block or text paragraph
+/// Mixin helper to align ine-block or text paragraph
 /// @access public
 /// @param {String} $align [center] - alignment direction
 /// @example scss - Usage
-///  .text-center {
-///    @include text-center
+///  .text-align-center {
+///    @include text-align
 ///  }
-@mixin text-center($align: center) {
+@mixin text-align($align: center) {
   text-align: $align;
 }
 
-/// Add underline animation to element
-/// Require that set element to `position: non-static`
+/// Add underline animation to <a> element
+/// Require that element with position other than `static`
 /// @access public
 /// @param {Color} $color [$color-primary] - color of underline
 /// @param {Length} $height [3px] - height of underline
@@ -160,16 +160,16 @@
   &::after {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transition: all 0.2s;
-    width: 0;
+    left: 0;
+    transform: scaleX(0) translateX(50%);
+    transition: transform 0.2s;
+    width: 100%;
     height: $height;
     background-color: $color;
     content: '';
   }
 
   &:hover::after {
-    left: 0;
-    width: 100%;
+    transform: scaleX(1) translateX(0);
   }
 }

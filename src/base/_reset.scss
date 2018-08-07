@@ -350,8 +350,8 @@ template {
  */
 /* stylelint-disable */
 html, body, div, span, applet, object, iframe, 
-header, footer, aside,
-h1, h2, h3, h4, h5, h6, p, section, article
+header, footer, aside, section, article
+h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym, address, big, 
 cite, code, del, dfn, em, font, img, figure
 ins, kbd, q, s, samp, small, strike, 
@@ -360,6 +360,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td, 
 center, u, b, i { 
 /* stylelint-enable */
+  position: relative;
   padding: 0;
   border: 0;
   vertical-align: baseline;
