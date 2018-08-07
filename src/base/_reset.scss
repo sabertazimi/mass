@@ -361,6 +361,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 center, u, b, i { 
 /* stylelint-enable */
   position: relative;
+  box-sizing: border-box;
   padding: 0;
   border: 0;
   vertical-align: baseline;
