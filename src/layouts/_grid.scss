@@ -1,22 +1,24 @@
-/// Total number of columns
+/// Max number of columns
 /// @type Number
-$grid-column-nums: 12 !default;
+$grid-max-columns: 12 !default;
 
 /// get floor width of grid column
 /// @param {Number} $i - number ratio of column width
+/// @param {Number} $max [$grid-max-columns] - max number of columns
 /// @return percent ratio of column width
-/// @require $grid-column-nums
-@function floor-width($i) {
-  $width: floor(100 * 100 * $i / $grid-column-nums) / 100;
+/// @require $grid-max-columns
+@function floor-width($i, $max: $grid-max-columns) {
+  $width: floor(100 * 100 * $i / $max) / 100;
   @return $width#{'%'};
 }
 
 /// column generator
 /// @param {Number} $i [1] - number ratio of column width
-@mixin column($i: 1) {
+/// @param {Number} $max [$grid-max-columns] - max number of columns
+@mixin column($i: 1, $max: $grid-max-columns) {
   float: left;
-  width: floor-width($i);
-  max-width: floor-width($i);
+  width: floor-width($i, $max);
+  max-width: floor-width($i, $max);
   min-height: 1px;
 }
 
@@ -35,17 +37,28 @@ $grid-column-nums: 12 !default;
   display: block;
 }
 
-
-@for $i from 1 through $grid-column-nums {
+@for $i from 1 through $grid-max-columns {
   .col-#{$i} {
     @include column($i);
   }
+
+  @for $j from 1 through ($i - 1) {
+    .col-#{$j}-#{$i} {
+      @include column($j, $i);
+    }
+  }
 }
 
-@for $i from 1 through $grid-column-nums {
+@for $i from 1 through $grid-max-columns {
   @include respond-to(small-only) {
     .col-sm-#{$i} {
       @include column($i);
+    }
+
+    @for $j from 1 through ($i - 1) {
+      .col-sm-#{$j}-#{$i} {
+        @include column($j, $i);
+      }
     }
   }
 
@@ -53,11 +66,23 @@ $grid-column-nums: 12 !default;
     .col-md-#{$i} {
       @include column($i);
     }
+
+    @for $j from 1 through ($i - 1) {
+      .col-md-#{$j}-#{$i} {
+        @include column($j, $i);
+      }
+    }
   }
   
   @include respond-to(large-only) {
     .col-lg-#{$i} {
       @include column($i);
+    }
+
+    @for $j from 1 through ($i - 1) {
+      .col-lg-#{$j}-#{$i} {
+        @include column($j, $i);
+      }
     }
   }
 
@@ -65,11 +90,23 @@ $grid-column-nums: 12 !default;
     .col-xl-#{$i} {
       @include column($i);
     }
+
+    @for $j from 1 through ($i - 1) {
+      .col-xl-#{$j}-#{$i} {
+        @include column($j, $i);
+      }
+    }
   }
 
   @include respond-to(xxlarge-up) {
     .col-xxl-#{$i} {
       @include column($i);
+    }
+
+    @for $j from 1 through ($i - 1) {
+      .col-xxl-#{$j}-#{$i} {
+        @include column($j, $i);
+      }
     }
   }
 }
