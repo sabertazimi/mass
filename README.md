@@ -32,6 +32,10 @@ npm start
 
 `.grid-container`
 
+#### Flex Container
+
+`.flex-container`
+
 ## Reference
 
 - [Sass Boilerplate](https://github.com/HugoGiraudel/sass-boilerplate)

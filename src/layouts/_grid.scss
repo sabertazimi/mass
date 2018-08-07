@@ -26,88 +26,97 @@ $grid-max-columns: 12 !default;
   @include clearfix;
   @include container;
   
-  @include respond-to(small-only) {
-    padding-right: $space-sm;
-    padding-left: $space-sm;
-  }
-  
   .row {
     @include clearfix;
     display: block;
+    width: 100%;
+  }
+}
+
+.flex-container {
+  @include container;
+  display: flex;
+  flex-wrap: wrap;
+  
+  .row {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.col {
+  flex: 1;
+}
+
+@for $i from 1 through $grid-max-columns {
+  .col-#{$i} {
+    @include column($i);
   }
   
-  @for $i from 1 through $grid-max-columns {
-    @include respond-to(small-up) {
-      .col-#{$i} {
-        @include column($i);
-      }
-      
-      @for $j from 1 through ($i - 1) {
-        .col-#{$j}-#{$i} {
-          @include column($j, $i);
-        }
+  @for $j from 1 through ($i - 1) {
+    .col-#{$j}-#{$i} {
+      @include column($j, $i);
+    }
+  }
+}
+
+@for $i from 1 through $grid-max-columns {
+  @include respond-to(small-only) {
+    .col-sm-#{$i} {
+      @include column($i);
+    }
+    
+    @for $j from 1 through ($i - 1) {
+      .col-sm-#{$j}-#{$i} {
+        @include column($j, $i);
       }
     }
   }
   
-  @for $i from 1 through $grid-max-columns {
-    @include respond-to(small-only) {
-      .col-sm-#{$i} {
-        @include column($i);
-      }
-      
-      @for $j from 1 through ($i - 1) {
-        .col-sm-#{$j}-#{$i} {
-          @include column($j, $i);
-        }
-      }
+  @include respond-to(medium-only) {
+    .col-md-#{$i} {
+      @include column($i);
     }
     
-    @include respond-to(medium-only) {
-      .col-md-#{$i} {
-        @include column($i);
-      }
-      
-      @for $j from 1 through ($i - 1) {
-        .col-md-#{$j}-#{$i} {
-          @include column($j, $i);
-        }
+    @for $j from 1 through ($i - 1) {
+      .col-md-#{$j}-#{$i} {
+        @include column($j, $i);
       }
     }
-    
-    @include respond-to(large-only) {
-      .col-lg-#{$i} {
-        @include column($i);
-      }
-      
-      @for $j from 1 through ($i - 1) {
-        .col-lg-#{$j}-#{$i} {
-          @include column($j, $i);
-        }
-      }
+  }
+  
+  @include respond-to(large-only) {
+    .col-lg-#{$i} {
+      @include column($i);
     }
     
-    @include respond-to(xlarge-only) {
-      .col-xl-#{$i} {
-        @include column($i);
-      }
-      
-      @for $j from 1 through ($i - 1) {
-        .col-xl-#{$j}-#{$i} {
-          @include column($j, $i);
-        }
+    @for $j from 1 through ($i - 1) {
+      .col-lg-#{$j}-#{$i} {
+        @include column($j, $i);
       }
     }
+  }
+  
+  @include respond-to(xlarge-only) {
+    .col-xl-#{$i} {
+      @include column($i);
+    }
     
-    @include respond-to(xxlarge-up) {
-      .col-xxl-#{$i} {
-        @include column($i);
+    @for $j from 1 through ($i - 1) {
+      .col-xl-#{$j}-#{$i} {
+        @include column($j, $i);
       }
-      
-      @for $j from 1 through ($i - 1) {
-        .col-xxl-#{$j}-#{$i} {
-          @include column($j, $i);
-        }
+    }
+  }
+  
+  @include respond-to(xxlarge-up) {
+    .col-xxl-#{$i} {
+      @include column($i);
+    }
+    
+    @for $j from 1 through ($i - 1) {
+      .col-xxl-#{$j}-#{$i} {
+        @include column($j, $i);
       }
     }
   }

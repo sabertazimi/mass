@@ -9,7 +9,21 @@ a {
   transition: color 0.3s;
 }
 
-.col {
+.row::before {
+  position: absolute;
+  top: 25%;
+  left: -$space-lg;
+  transform: scale(0);
+  transition: all 0.2s;
+  color: $color-blue;
+}
+
+.row:hover::before {
+  transform: scale(1);
+  content: 'row';
+}
+
+.column {
   transition: background-color 0.3s;
   padding: $space-sm;
   border: 1px solid $color-blue-3;
@@ -18,6 +32,6 @@ a {
   text-align: center;
 }
 
-.col:hover {
+.column:hover {
   background-color: $color-blue-6;
 }
