@@ -2,10 +2,21 @@
 /// @type Number
 $grid-column-nums: 12 !default;
 
-/// column reset style
-@mixin column {
+/// get floor width of grid column
+/// @param {Number} $i - number ratio of column width
+/// @return percent ratio of column width
+/// @require $grid-column-nums
+@function floor-width($i) {
+  $width: floor(100 * 100 * $i / $grid-column-nums) / 100;
+  @return $width#{'%'};
+}
+
+/// column generator
+/// @param {Number} $i [1] - number ratio of column width
+@mixin column($i: 1) {
   float: left;
-  width: 100% / $grid-column-nums;
+  width: floor-width($i);
+  max-width: floor-width($i);
   min-height: 1px;
 }
 
@@ -27,44 +38,38 @@ $grid-column-nums: 12 !default;
 
 @for $i from 1 through $grid-column-nums {
   .col-#{$i} {
-    @include column;
-    width: 100% / $grid-column-nums * $i;
+    @include column($i);
   }
 }
 
 @for $i from 1 through $grid-column-nums {
   @include respond-to(small-only) {
     .col-sm-#{$i} {
-      @include column;
-      width: 100% / $grid-column-nums * $i;
+      @include column($i);
     }
   }
 
   @include respond-to(medium-only) {
     .col-md-#{$i} {
-      @include column;
-      width: 100% / $grid-column-nums * $i;
+      @include column($i);
     }
   }
   
   @include respond-to(large-only) {
     .col-lg-#{$i} {
-      @include column;
-      width: 100% / $grid-column-nums * $i;
+      @include column($i);
     }
   }
 
   @include respond-to(xlarge-only) {
     .col-xl-#{$i} {
-      @include column;
-      width: 100% / $grid-column-nums * $i;
+      @include column($i);
     }
   }
 
   @include respond-to(xxlarge-up) {
     .col-xxl-#{$i} {
-      @include column;
-      width: 100% / $grid-column-nums * $i;
+      @include column($i);
     }
   }
 }
