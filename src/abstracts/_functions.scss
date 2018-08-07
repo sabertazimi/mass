@@ -54,7 +54,6 @@
 /// @access public
 /// @param {Length} $rem - rem to px
 /// @return {Length} px
-/// @require $root-base-size
 /// @group Typography
 @function rem2px($rem) {
   @if unitless($rem) {

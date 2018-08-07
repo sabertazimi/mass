@@ -5,7 +5,7 @@ $grid-max-columns: 12 !default;
 /// get floor width of grid column
 /// @param {Number} $i - number ratio of column width
 /// @param {Number} $max [$grid-max-columns] - max number of columns
-/// @return percent ratio of column width
+/// @return {Number} percent ratio of column width
 /// @require $grid-max-columns
 @function floor-width($i, $max: $grid-max-columns) {
   $width: floor(100 * 100 * $i / $max) / 100;
