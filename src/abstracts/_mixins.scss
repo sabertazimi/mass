@@ -71,7 +71,7 @@
   font-size: $rem;
 }
 
-/// @media queries helper mixin
+/// media queries helper mixin
 /// @access public
 /// @param {String} $range [medium-up] - different range of device size
 @mixin respond-to($range: medium-up) {
