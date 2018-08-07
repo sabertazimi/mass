@@ -138,6 +138,15 @@
   width: 100%;
   max-width: $param-max-width;
   margin: 0 auto;
+
+  @include respond-to(small-only) {
+    padding-right: $space-sm;
+    padding-left: $space-sm;
+
+    .container & {
+      padding: 0;
+    }
+  }
 }
 
 /// Mixin helper to align ine-block or text paragraph
