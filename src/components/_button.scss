@@ -6,7 +6,7 @@ $btn-name: 'btn' !default;
 $btn-hover: 30% !default;
 /// outline button border width
 /// @type Length
-$btn-outline-border: 2px !default;
+$btn-outline-border: 1px !default;
 /// round button border radius
 /// @type Length
 $btn-round-radius: 5em !default;
@@ -24,7 +24,7 @@ $btn-background: (
   transition: all 0.3s;
   min-width: 5em;
   margin-bottom: $space-sm;
-  padding: $space-sm $space-md;
+  padding: $space-xs $space-lg;
   border: $btn-outline-border solid transparent;
   cursor: pointer;
   color: $color-white;
