@@ -10,7 +10,7 @@ a {
   transition: color 0.3s;
 }
 
-.row::before {
+.section-grid .row::before {
   position: absolute;
   top: 25%;
   left: -$space-lg;
@@ -19,7 +19,7 @@ a {
   color: $color-blue;
 }
 
-.row:hover::before {
+.section-grid .row:hover::before {
   transform: scale(1);
   content: 'row';
 }
