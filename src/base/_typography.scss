@@ -16,6 +16,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 form legend {
   margin-bottom: $space-xxs;
   line-height: $heading-line-height;
@@ -33,7 +34,8 @@ strong {
 .text-container {
   h2,
   h3,
-  h4 {
+  h4,
+  h5 {
     margin-top: $space-sm;
   }
 
@@ -81,18 +83,22 @@ strong {
 }
 
 h1 {
-  @include font-size($text-xxl);
+  @include font-size($text-xxxl);
 }
 
 h2 {
-  @include font-size($text-xl);
+  @include font-size($text-xxl);
 }
 
 h3 {
-  @include font-size($text-lg);
+  @include font-size($text-xl);
 }
 
 h4 {
+  @include font-size($text-lg);
+}
+
+h5 {
   @include font-size($text-md);
 }
 
