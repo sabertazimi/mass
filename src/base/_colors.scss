@@ -11,10 +11,6 @@ form legend {
   color: $color-text-heading;
 }
 
-a {
-  color: $color-link;
-}
-
 /* color helper class */
 @each $color-list, $selector in $color-lists {
   $primary-color: map-get($color-list , $color-primary-depth);

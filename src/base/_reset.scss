@@ -350,7 +350,7 @@ template {
  */
 /* stylelint-disable */
 html, body, div, span, applet, object, iframe, 
-header, footer, aside, section, article
+header, footer, aside, section, article, nav
 h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym, address, big, 
 cite, code, del, dfn, em, font, img, figure
@@ -364,6 +364,7 @@ center, u, b, i {
   box-sizing: border-box;
   padding: 0;
   border: 0;
+  color: inherit;
   vertical-align: baseline;
 } 
 
