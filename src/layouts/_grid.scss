@@ -45,6 +45,10 @@ $grid-max-columns: 12 !default;
     display: flex;
     flex-direction: row;
     width: 100%;
+
+    @include respond-to(small-only) {
+      flex-wrap: wrap;
+    }
   }
 }
 
