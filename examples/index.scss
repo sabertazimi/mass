@@ -1,4 +1,5 @@
 @import '~mass/abstracts/variables';
+@import '~mass/abstracts/mixins';
 
 header,
 footer {
@@ -34,4 +35,93 @@ a {
 
 .column:hover {
   background-color: $color-blue-6;
+}
+
+.navbar {
+  position: relative;
+  transition: all 0.3s;
+  text-align: left;
+  
+  &__toggle {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+.hamburger {
+  display: none;
+  
+  @include respond-to(small-only) {
+    &,
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      transition: all 0.3s ease-in-out;
+      width: 2rem;
+      height: 5px;
+      border-radius: 1px;
+      background-color: $color-white;
+      cursor: pointer;
+      content: '';
+    }
+    
+    &::before {
+      top: -10px;
+    }
+    
+    &::after {
+      top: 10px;
+    }
+    
+    .navbar__toggle:checked ~ & {
+      background-color: transparent;
+    }
+    
+    .navbar__toggle:checked ~ &::before {
+      transform: translateY(10px) rotate(45deg);
+    }
+    
+    .navbar__toggle:checked ~ &::after {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+}
+
+.navbar__content {
+  @include respond-to(small-only) {
+    transform: scale(0.5);
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    
+    .navbar__toggle:checked ~ & {
+      transform: scale(1);
+      max-height: 100%;
+    }
+  }
+}
+
+.nav {
+  list-style-type: none;
+  list-style-position: inside;
+  
+  &__item {
+    display: inline-block;
+    margin: $space-md;
+    
+    @include respond-to(small-only) {
+      display: block;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  
+  &__link {
+    text-decoration: none;
+    
+    @include on-event {
+      color: $color-orange;
+    }
+  }
 }
