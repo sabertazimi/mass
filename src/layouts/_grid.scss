@@ -33,6 +33,8 @@ $grid-max-columns: 12 !default;
   }
 }
 
+/* flex grid helper class */
+
 .flex-container {
   @include container;
   display: flex;
@@ -46,8 +48,10 @@ $grid-max-columns: 12 !default;
   }
 }
 
+/* column width definition */
 .col {
   flex-basis: 100%;
+  text-align: center;
 }
 
 @include respond-to(medium-up) {
