@@ -40,7 +40,7 @@ $btn-transition-time: 0.3s !default;
   color: $color-white;
 
   @include on-event {
-    background: tint($btn-color, $btn-hover);
+    background-color: tint($btn-color, $btn-hover);
   }
 
   &--bold {
@@ -58,6 +58,10 @@ $btn-transition-time: 0.3s !default;
 
   &--round {
     border-radius: $btn-round-radius;
+
+    @include bem-on-event {
+      border-radius: $btn-round-radius;
+    }
   }
 
   &--outline {
