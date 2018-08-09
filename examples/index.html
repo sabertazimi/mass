@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="bg-blue text-align-center">
+  <header class="bg-primary text-align-center">
     <nav class="navbar navbar--dark navbar--collapse">
       <input class="navbar__toggle" type="checkbox" name="navbar-toggle" id="navbar-toggle">
       <label class="hamburger" for="navbar-toggle"></label>
@@ -207,7 +207,7 @@
           </div>
         </div>
       </div>
-      <h2>Grid based on flexbox with specified width</h2>
+      <h2>Grid based on flexbox with specified width (without specified row)</h2>
       <div class="flex-container">
         <div class="col-12">
           <div class="column">12</div>
@@ -294,7 +294,7 @@
           <div class="column">1 md-1-4 sm-1-3</div>
         </div>
       </div>
-      <h2>Grid based on flexbox with auto width</h2>
+      <h2>Grid based on flexbox without specified width (with specified row)</h2>
       <div class="flex-container">
         <div class="row">
           <div class="col">
@@ -335,7 +335,21 @@
       <div class="flex-container">
         <div class="row">
           <div class="col">
-            <button class="btn btn--default">default</button>
+            <button class="btn">default</button>
+          </div>
+          <div class="col">
+            <button class="btn btn--outline">default</button>
+          </div>
+          <div class="col">
+            <button class="btn btn--outline btn--round">default</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button class="btn btn--primary">primary</button>
+          </div>
+          <div class="col">
+            <button class="btn btn--secondary">secondary</button>
           </div>
           <div class="col">
             <button class="btn btn--success">success</button>
@@ -352,36 +366,19 @@
         </div>
         <div class="row">
           <div class="col">
-            <button class="btn btn--default btn--large">large</button>
+            <button class="btn btn--outline-primary">primary</button>
           </div>
           <div class="col">
-            <button class="btn btn--success btn--small">small</button>
+            <button class="btn btn--secondary btn--round">secondary</button>
           </div>
           <div class="col">
-            <button class="btn btn--danger btn--bold">bold</button>
+            <button class="btn btn--outline-success btn--round">success</button>
           </div>
           <div class="col">
-            <button class="btn btn--warning btn--upper">uppercase</button>
+            <button class="btn btn--outline-danger btn--round">danger</button>
           </div>
           <div class="col">
-            <button class="btn btn--info bg-violet bg-violet-5--hover">custom</button>
-          </div>
-        </div>
-          <div class="col">
-            <button class="btn btn--default btn--block">block</button>
-          </div>
-        <div class="row">
-          <div class="col">
-            <button class="btn btn--outline-default">default</button>
-          </div>
-          <div class="col">
-            <button class="btn btn--outline-success">success</button>
-          </div>
-          <div class="col">
-            <button class="btn btn--outline-danger">danger</button>
-          </div>
-          <div class="col">
-            <button class="btn btn--outline-warning">warning</button>
+            <button class="btn btn--warning btn--round">warning</button>
           </div>
           <div class="col">
             <button class="btn btn--outline-info">info</button>
@@ -389,28 +386,37 @@
         </div>
         <div class="row">
           <div class="col">
-            <button class="btn btn--round-default">default</button>
+            <button class="btn btn--primary btn--xlarge">xlarge</button>
           </div>
           <div class="col">
-            <button class="btn btn--round-success">success</button>
+            <button class="btn btn--secondary btn--large">large</button>
           </div>
           <div class="col">
-            <button class="btn btn--round-danger">danger</button>
-          </div>
-          <div class="col">
-            <button class="btn btn--round-warning">warning</button>
-          </div>
-          <div class="col">
-            <button class="btn btn--round-info">info</button>
+            <button class="btn btn--success btn--small">small</button>
           </div>
         </div>
+        <div class="row">
+          <div class="col">
+            <button class="btn btn--danger btn--bold">bold</button>
+          </div>
+          <div class="col">
+            <button class="btn btn--warning btn--upper">uppercase</button>
+          </div>
+          <div class="col">
+            <button class="btn btn--info bg-pink bg-pink-5--hover">custom</button>
+          </div>
+        </div>
+        <button class="btn btn--primary btn--block">block</button>
+        <button class="btn btn--outline-secondary btn--block">block</button>
+        <button class="btn btn--success btn--round btn--block">block</button>
+        <button class="btn btn--outline-danger btn--round btn--block">block</button>
       </div>
     </section>
   </main>
   <footer class="text-white bg-black text-align-center">
     <small>Developed with
       <span class="text-red">&#10084;</span> by
-      <a href="https://github.com/sabertazimi" target="_blank" class="text-orange link--underline">sabertazimi</a>
+      <a href="https://github.com/sabertazimi" target="_blank" class="text-primary link--underline">sabertazimi</a>
     </small>
   </footer>
 </body>

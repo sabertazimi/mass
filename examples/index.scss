@@ -16,7 +16,7 @@ a {
   left: -$space-lg;
   transform: scale(0);
   transition: all 0.2s;
-  color: $color-blue;
+  color: $color-primary;
 }
 
 .section-grid .row:hover::before {
@@ -27,14 +27,14 @@ a {
 .column {
   transition: background-color 0.3s;
   padding: $space-sm;
-  border: 1px solid $color-blue-3;
-  background-color: $color-blue;
+  border: 1px solid $color-violet-3;
+  background-color: $color-violet;
   color: $color-gray-0;
   text-align: center;
 }
 
 .column:hover {
-  background-color: $color-blue-6;
+  background-color: $color-violet-6;
 }
 
 .navbar {
@@ -121,7 +121,7 @@ a {
     text-decoration: none;
     
     @include on-event {
-      color: $color-orange;
+      color: $color-violet-3;
     }
   }
 }
