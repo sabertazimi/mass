@@ -1,6 +1,9 @@
 /// button module name
 /// @type String
 $btn-name: 'btn' !default;
+/// default button color
+/// @type Color
+$btn-color: $color-black !default;
 /// hover color 
 /// @type Number
 $btn-hover: 30% !default;
@@ -10,33 +13,36 @@ $btn-outline-border: 1px !default;
 /// round button border radius
 /// @type Length
 $btn-round-radius: 5em !default;
-/// background color
-/// @type Map
-$btn-background: (
-  'default': $color-gray,
-  'success': $color-green,
-  'danger': $color-red,
-  'warning': $color-yellow,
-  'info': $color-blue 
-) !default;
+/// button hover animation time
+/// @type Time
+$btn-transition-time: 0.3s !default;
+
+@mixin btn-outline($color) {
+  border: $btn-outline-border solid $color;
+  background-color: $color-white;
+  color: $color;
+    
+  @include on-event {
+    background-color: $color;
+    color: $color-white;
+  }
+}
 
 .#{$btn-name} {
-  transition: all 0.3s;
+  transition: all $btn-transition-time;
   min-width: 5em;
   margin-bottom: $space-sm;
   padding: $space-xs $space-lg;
   border: $btn-outline-border solid transparent;
+  border-radius: 1px;
+  background-color: $btn-color;
   cursor: pointer;
   color: $color-white;
-  
-  &--large {
-    font-size: $text-lg;
+
+  @include on-event {
+    background: tint($btn-color, $btn-hover);
   }
-  
-  &--small {
-    font-size: $text-sm;
-  }
-  
+
   &--bold {
     font-weight: bold;
   }
@@ -49,21 +55,23 @@ $btn-background: (
     display: block;
     width: 100%;
   }
-}
 
-@mixin btn-outline($color) {
-  border: $btn-outline-border solid $color;
-  border-radius: 1px;
-  background-color: $color-white;
-  color: $color;
-    
-  @include on-event {
-    background-color: $color;
-    color: $color-white;
+  &--round {
+    border-radius: $btn-round-radius;
+  }
+
+  &--outline {
+    @include btn-outline($btn-color);
   }
 }
 
-@each $key, $value in $btn-background {
+@each $name, $size in $font-main-list {
+  .#{$btn-name}--#{$name} {
+    @include font-size($size);
+  }
+}
+
+@each $key, $value in $color-main-list {
   .#{$btn-name}--#{$key} {
     background-color: $value;
     
@@ -74,10 +82,5 @@ $btn-background: (
   
   .#{$btn-name}--outline-#{$key} {
     @include btn-outline($value);
-  }
-
-  .#{$btn-name}--round-#{$key} {
-    @include btn-outline($value);
-    border-radius: $btn-round-radius;
   }
 }
