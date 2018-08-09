@@ -40,10 +40,14 @@ $grid-max-columns: 12 !default;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   
   .row {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 
     @include respond-to(small-only) {
