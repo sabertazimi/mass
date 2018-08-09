@@ -66,44 +66,34 @@ strong {
 }
 
 /* text size */
-@each $text-name, $text-size in (
-  'text-xxxs': $text-xxxs,
-  'text-xxs': $text-xxs,
-  'text-xs': $text-xs,
-  'text-sm': $text-sm,
-  'text-md': $text-md,
-  'text-lg': $text-lg,
-  'text-xl': $text-xl,
-  'text-xxl': $text-xxl,
-  'text-xxxl': $text-xxxl,
-) {
-  .#{$text-name} {
+@each $name, $text-size in $font-main-list {
+  .text-#{$name} {
     @include font-size($text-size);
   }
 }
 
 h1 {
-  @include font-size($text-xxxl);
+  @include font-size($text-xxxlarge);
 }
 
 h2 {
-  @include font-size($text-xxl);
+  @include font-size($text-xxlarge);
 }
 
 h3 {
-  @include font-size($text-xl);
+  @include font-size($text-xlarge);
 }
 
 h4 {
-  @include font-size($text-lg);
+  @include font-size($text-large);
 }
 
 h5 {
-  @include font-size($text-md);
+  @include font-size($text-medium);
 }
 
 small {
-  @include font-size($text-sm);
+  @include font-size($text-small);
 }
 
 .truncate {

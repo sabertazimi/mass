@@ -21,28 +21,46 @@ $text-scale-ratio: 1.2 !default;
 
 /// Text font-size group
 /// @type Length
-$text-xxxs: ($text-base-size / ($text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio)) !default;
+$text-xxxsmall: ($text-base-size / ($text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio)) !default;
 /// Text font-size group
 /// @type Length
-$text-xxs: ($text-base-size / ($text-scale-ratio * $text-scale-ratio * $text-scale-ratio)) !default;
+$text-xxsmall: ($text-base-size / ($text-scale-ratio * $text-scale-ratio * $text-scale-ratio)) !default;
 /// Text font-size group
 /// @type Length
-$text-xs: ($text-base-size / ($text-scale-ratio * $text-scale-ratio)) !default;
+$text-xsmall: ($text-base-size / ($text-scale-ratio * $text-scale-ratio)) !default;
 /// Text font-size group
 /// @type Length
-$text-sm: ($text-base-size / $text-scale-ratio) !default;
+$text-small: ($text-base-size / $text-scale-ratio) !default;
 /// Text font-size group
 /// @type Length
-$text-md: ($text-base-size * $text-scale-ratio) !default;
+$text-medium: ($text-base-size * $text-scale-ratio) !default;
 /// Text font-size group
 /// @type Length
-$text-lg: ($text-base-size * $text-scale-ratio * $text-scale-ratio) !default;
+$text-large: ($text-base-size * $text-scale-ratio * $text-scale-ratio) !default;
 /// Text font-size group
 /// @type Length
-$text-xl: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
+$text-xlarge: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
 /// Text font-size group
 /// @type Length
-$text-xxl: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
+$text-xxlarge: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
 /// Text font-size group
 /// @type Length
-$text-xxxl: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
+$text-xxxlarge: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
+/// Text font-size group
+/// @type Length
+$text-xxxxlarge: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
+/// Font size map
+/// @type Map
+/// @prop {String} key - name of font size
+/// @prop {Length} value - value of font size
+$font-main-list: (
+  'xxxsmall': $text-xxxsmall,
+  'xxsmall': $text-xxsmall,
+  'xsmall': $text-xsmall,
+  'small': $text-small,
+  'medium': $text-medium,
+  'large': $text-large,
+  'xlarge': $text-xlarge,
+  'xxlarge': $text-xxlarge,
+  'xxxlarge': $text-xxxlarge,
+) !default;
