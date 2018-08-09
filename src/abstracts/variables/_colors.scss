@@ -475,9 +475,24 @@ $color-white: #fff !default;
 /// @type Color
 $color-black: #000 !default;
 
-/// Primary color
-/// @type Color
-$color-primary: $color-blue;
+/// Main theme color
+/// @type Map
+/// @prop {String} key - name of color
+/// @prop {Color} value - value of color
+$color-main-list: (
+  'primary': $color-violet,
+  'secondary': $color-gray,
+  'success': $color-green,
+  'danger': $color-red,
+  'warning': $color-yellow,
+  'info': $color-blue 
+) !default;
+$color-primary: map-get($color-main-list, 'primary') !default;
+$color-secondary: map-get($color-main-list, 'secondary') !default;
+$color-success: map-get($color-main-list, 'success') !default;
+$color-danger: map-get($color-main-list, 'danger') !default;
+$color-warning: map-get($color-main-list, 'warning') !default;
+$color-info: map-get($color-main-list, 'info') !default;
 /// Color for paragraph normal text
 /// @type Color
 $color-text: $color-gray-9 !default;

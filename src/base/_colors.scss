@@ -11,38 +11,35 @@ form legend {
   color: $color-text-heading;
 }
 
-/* color helper class */
-@each $color-list, $selector in $color-lists {
-  $primary-color: map-get($color-list , $color-primary-depth);
-
-  .text-#{$selector} {
-    color: $primary-color !important;
-
-    @include bem-on-event {
-      color: $primary-color !important;
-    }
-  }
-
-  .bg-#{$selector} {
-    background-color: $primary-color !important;
-
-    @include bem-on-event {
-      background-color: $primary-color !important;
-    }
-  }
-
-  @each $depth, $color in $color-list {
-    .text-#{$selector}-#{$depth} {
+@mixin color-helper($name, $color, $suffix: 1px) {
+  @if type-of($suffix) == number {
+    .text-#{$name} {
       color: $color !important;
-
+      
       @include bem-on-event {
         color: $color !important;
       }
     }
-
-    .bg-#{$selector}-#{$depth} {
+    
+    .bg-#{$name} {
       background-color: $color !important;
-
+      
+      @include bem-on-event {
+        background-color: $color !important;
+      }
+    }
+  } @else {
+    .text-#{$name}-#{$suffix} {
+      color: $color !important;
+      
+      @include bem-on-event {
+        color: $color !important;
+      }
+    }
+    
+    .bg-#{$name}-#{$suffix} {
+      background-color: $color !important;
+      
       @include bem-on-event {
         background-color: $color !important;
       }
@@ -50,34 +47,20 @@ form legend {
   }
 }
 
-.text-white {
-  color: $color-white !important;
+@include color-helper('white', $color-white);
+@include color-helper('black', $color-black);
 
-  @include bem-on-event {
-    color: $color-white !important;
+/* color helper class */
+@each $color-list, $selector in $color-lists {
+  $primary-color: map-get($color-list , $color-primary-depth);
+
+  @include color-helper($selector, $primary-color);
+  
+  @each $depth, $color in $color-list {
+    @include color-helper($selector, $color, $depth);
   }
 }
 
-.text-black {
-  color: $color-black !important;
-
-  @include bem-on-event {
-    color: $color-black !important;
-  }
-}
-
-.bg-white {
-  background-color: $color-white !important;
-
-  @include bem-on-event {
-    background-color: $color-white !important;
-  }
-}
-
-.bg-black {
-  background-color: $color-black !important;
-
-  @include bem-on-event {
-    background-color: $color-black !important;
-  }
+@each $name, $color in $color-main-list {
+  @include color-helper($name, $color);
 }
