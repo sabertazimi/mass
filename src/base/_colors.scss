@@ -28,6 +28,14 @@ form legend {
         background-color: $color !important;
       }
     }
+
+    .border-#{$name} {
+      border: 1px solid $color !important;
+      
+      @include bem-on-event {
+        border: 1px solid $color !important;
+      }
+    }
   } @else {
     .text-#{$name}-#{$suffix} {
       color: $color !important;
@@ -42,6 +50,14 @@ form legend {
       
       @include bem-on-event {
         background-color: $color !important;
+      }
+    }
+
+    .border-#{$name}-#{$suffix} {
+      border: 1px solid $color !important;
+      
+      @include bem-on-event {
+        border: 1px solid $color !important;
       }
     }
   }
