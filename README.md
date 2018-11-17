@@ -2,7 +2,12 @@
 
 [![Build Status](https://travis-ci.org/sabertazimi/mass.svg?branch=master)](https://travis-ci.org/sabertazimi/mass)
 
-A minimal sass-based UI library
+A minimal sass-based UI library - [mass.css](https://sabertazimi.github.io/mass)
+
+## Documentation
+
+- [mass.css documentation](https://sabertazimi.github.io/mass)
+- [Sass API documentation](https://sabertazimi.github.io/mass/api)
 
 ## Structure
 
