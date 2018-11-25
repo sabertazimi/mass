@@ -1,33 +1,39 @@
 language: node_js
+
 node_js:
   - "stable"
+
 cache:
   directories:
   - node_modules
     - $HOME/.npm
+    - $HOME/.npmrc
+
 before_install:
   - export TZ='Asia/Shanghai'
+
 install:
   - npm install -g yarn
+
 script:
   - npm install
   - npm run lint
   - npm run lib
   - npm run gh-pages 
+
 branches:
   only:
     - master
+
 deploy:
+  - provider: script
+    script: echo "//<npm-registry>:8080/:_authToken=$NPM_TOKEN" > $HOME/.npmrc && npm publish --access=public
+    skip_cleanup: true
+    on:
+      tags: true
   - provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
     local_dir: build
     on:
       branch: master
-  - provider: script
-    script:
-      - echo "//<npm-registry>:8080/:_authToken=$NPM_TOKEN" > ~/.npmrc
-      - npm publish --access=public
-    skip_cleanup: true
-    on:
-      tags: true
