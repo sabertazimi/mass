@@ -24,6 +24,7 @@ script:
 branches:
   only:
     - master
+    - /^v\d+\.\d+\.\d+$/
 
 deploy:
   - provider: script
