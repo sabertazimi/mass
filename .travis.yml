@@ -27,8 +27,9 @@ branches:
     - /^v\d+\.\d+\.\d+$/
 
 deploy:
-  - provider: script
-    script: echo "//<npm-registry>:8080/:_authToken=$NPM_TOKEN" > $HOME/.npmrc && npm publish --access=public
+  - provider: npm
+    email: "sabertazimi@gmail.com"
+    api_key: $NPM_TOKEN
     skip_cleanup: true
     on:
       tags: true
