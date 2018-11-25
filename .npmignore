@@ -2,6 +2,7 @@ build
 dist
 examples
 src
+node_modules
 .babelrc
 .eslintrc
 .travis.yml

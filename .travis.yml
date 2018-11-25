@@ -24,9 +24,10 @@ deploy:
     local_dir: build
     on:
       branch: master
-  - provider: npm
-    email: "sabertazimi@gmail.com"
-    api_key: $NPM_TOKEN
+  - provider: script
+    script:
+      - echo "//<npm-registry>:8080/:_authToken=$NPM_TOKEN" > ~/.npmrc
+      - npm publish --access=public
     skip_cleanup: true
     on:
       tags: true
