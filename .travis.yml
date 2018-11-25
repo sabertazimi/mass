@@ -18,9 +18,15 @@ branches:
   only:
     - master
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: build
-  on:
-    branch: master
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: build
+    on:
+      branch: master
+  - provider: npm
+    email: "sabertazimi@gmail.com"
+    api_key: $NPM_TOKEN
+    skip_cleanup: true
+    on:
+      tags: true

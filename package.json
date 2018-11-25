@@ -1,5 +1,5 @@
 {
-  "name": "mass.css",
+  "name": "@sabertazimi/mass",
   "version": "0.0.1",
   "description": "A minimal sass-based UI library",
   "main": "./lib/mass.min.css",
