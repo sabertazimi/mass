@@ -21,11 +21,6 @@ script:
   - npm run lib
   - npm run gh-pages 
 
-branches:
-  only:
-    - master
-    - /^v\d+\.\d+\.\d+$/
-
 deploy:
   - provider: npm
     email: "sabertazimi@gmail.com"
@@ -33,6 +28,7 @@ deploy:
     skip_cleanup: true
     on:
       tags: true
+      all_branches: true
   - provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
