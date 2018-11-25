@@ -5,6 +5,9 @@ src
 node_modules
 .babelrc
 .eslintrc
+.eslintrc.json
+.sassdocrc
+.stylelintrc.json
 .travis.yml
 postcss.config.js
 webpack.examples.config.js
