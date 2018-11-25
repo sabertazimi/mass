@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --port 2333 --mode development --open --config webpack.examples.config.js",
-    "lib": "cross-env NODE_ENV=production webpack --mode production && rm -fr ./lib/mass.js && rm -fr ./lib/mass.min.js",
+    "lib": "cross-env NODE_ENV=production webpack --mode production && rm -fr ./lib/mass.js && rm -fr ./lib/mass.min.js ./lib/mass.min.js.map",
     "examples": "cross-env NODE_ENV=production webpack --mode production --config webpack.examples.config.js",
     "docs": "sassdoc ./src --verbose",
     "gh-pages": "npm run examples && npm run docs",
