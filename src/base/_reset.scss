@@ -128,12 +128,14 @@ sup {
    ========================================================================== */
 
 /**
- * Remove the border on images inside links in IE 10.
+ * 1. Responsive image design.
+ * 2. Remove the border on images inside links in IE 10.
  */
 
 img {
-  max-width: 100%;
-  border-style: none;
+  max-width: 100%; /* 1 */
+  object-fit: cover; /* 1 */
+  border-style: none; /* 2 */
 }
 
 /* Forms
@@ -142,6 +144,7 @@ img {
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
+ * 3. Remove preset appearance.
  */
 
 button,
@@ -153,6 +156,7 @@ textarea {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
+  // appearance: none; /* 3 */
 }
 
 /**
