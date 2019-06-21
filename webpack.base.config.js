@@ -46,8 +46,8 @@ module.exports = (devMode, includeHtml) => ({
           {
             loader: 'css-loader',
             options: {
-              minimize: !devMode,
-              // importLoaders: 2,
+              // minimize: !devMode,
+              importLoaders: 2,
             },
           },
           'postcss-loader',
