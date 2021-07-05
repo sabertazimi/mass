@@ -1,6 +1,6 @@
 # mass
 
-[![Build Status](https://travis-ci.org/sabertazimi/mass.svg?branch=master)](https://travis-ci.org/sabertazimi/mass)
+[![Continuous Integration](https://github.com/sabertazimi/mass/actions/workflows/ci.yml/badge.svg)](https://github.com/sabertazimi/mass/actions/workflows/ci.yml)
 
 A minimal sass-based UI library - [mass.css](https://sabertazimi.github.io/mass)
 
