@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/sabertazimi/mass",
   "devDependencies": {
-    "autoprefixer": "^8.6.2",
+    "autoprefixer": "^10.3.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
@@ -52,7 +52,7 @@
     "mini-css-extract-plugin": "^1.6.2",
     "node-sass": "^6.0.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "postcss-loader": "^2.1.5",
+    "postcss-loader": "^4.3.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "sass-loader": "^10.2.0",
