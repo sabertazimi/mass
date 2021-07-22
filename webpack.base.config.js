@@ -4,7 +4,7 @@ const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = (devMode, includeHtml) => ({
@@ -57,7 +57,7 @@ module.exports = (devMode, includeHtml) => ({
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(includeHtml ? 'build' : 'lib'),
+    new CleanWebpackPlugin(),
     includeHtml
       && new HtmlWebpackPlugin({
         hash: true,
