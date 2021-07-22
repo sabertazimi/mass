@@ -35,18 +35,10 @@ module.exports = (devMode, includeHtml) => ({
       {
         test: /\.scss$/,
         use: [
-          devMode
-            ? {
-              loader: 'style-loader',
-              options: {
-                sourceMap: true,
-              },
-            }
-            : MiniCssExtractPlugin.loader,
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
-              // minimize: !devMode,
               importLoaders: 2,
             },
           },
