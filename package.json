@@ -61,7 +61,7 @@
     "react-dom": "^16.4.1",
     "sass-loader": "^10.2.0",
     "sassdoc": "^2.7.0",
-    "style-loader": "^2.0.0",
+    "style-loader": "^3.2.1",
     "stylelint": "^9.4.0",
     "stylelint-config-mass": "^1.0.2",
     "stylelint-webpack-plugin": "^0.10.5",
