@@ -1,4 +1,5 @@
 module.exports = {
+  parser: '@babel/eslint-parser',
   env: {
     browser: true,
     es2021: true,
@@ -7,6 +8,7 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'prettier',
   ],
   parserOptions: {
     ecmaFeatures: {
