@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = (devMode, includeHtml) => ({
   optimization: {
@@ -19,7 +20,7 @@ module.exports = (devMode, includeHtml) => ({
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
+        use: ['babel-loader'],
       },
       {
         test: /\.html$/,
@@ -61,6 +62,7 @@ module.exports = (devMode, includeHtml) => ({
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
     }),
     new StyleLintPlugin(),
+    new ESLintPlugin({ extensions: ['js', 'jsx'] }),
   ].filter(Boolean),
   resolve: {
     extensions: ['.js', '.jsx'],
