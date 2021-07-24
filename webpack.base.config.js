@@ -1,7 +1,7 @@
 const path = require('path');
 
 const TerserJSPlugin = require('terser-webpack-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -11,8 +11,8 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 module.exports = (devMode, includeHtml) => ({
   optimization: {
     minimizer: [
-      !devMode && new TerserJSPlugin({}),
-      !devMode && new OptimizeCSSAssetsPlugin({}),
+      !devMode && new TerserJSPlugin(),
+      !devMode && new CssMinimizerPlugin(),
     ].filter(Boolean),
   },
   module: {
@@ -51,8 +51,8 @@ module.exports = (devMode, includeHtml) => ({
   },
   plugins: [
     new CleanWebpackPlugin(),
-    includeHtml
-      && new HtmlWebpackPlugin({
+    includeHtml &&
+      new HtmlWebpackPlugin({
         hash: true,
         template: './examples/index.html',
         filename: './index.html',
@@ -61,7 +61,9 @@ module.exports = (devMode, includeHtml) => ({
       filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
     }),
-    new StyleLintPlugin(),
+    new StyleLintPlugin({
+      exclude: ['node_modules', 'build', 'lib'],
+    }),
     new ESLintPlugin({ extensions: ['js', 'jsx'] }),
   ].filter(Boolean),
   resolve: {
