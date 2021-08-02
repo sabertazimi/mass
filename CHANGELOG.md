@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/sabertazimi/mass/compare/v1.0.1...v1.0.2) (2021-08-02)
+
+
+### Bug Fixes
+
+* **release:** tag with signature ([848f33f](https://github.com/sabertazimi/mass/commit/848f33f6bd8b08c9a5a8f07787728c22bc57acb9))
+
 ### [1.0.1](https://github.com/sabertazimi/mass/compare/v1.0.0...v1.0.1) (2021-08-02)
 
 
