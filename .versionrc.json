@@ -4,11 +4,12 @@
     { "type": "feat", "section": "Features" },
     { "type": "update", "section": "Updates" },
     { "type": "fix", "section": "Bug Fixes" },
+    { "type": "build", "section": "Building Work" },
     { "type": "chore", "hidden": true },
     { "type": "docs", "hidden": true },
-    { "type": "style", "hidden": true },
+    { "type": "perf", "section": "Performance" },
     { "type": "refactor", "hidden": true },
-    { "type": "perf", "hidden": true },
-    { "type": "test", "hidden": true }
+    { "type": "style", "hidden": true },
+    { "type": "test", "section": "Testing" }
   ]
 }
