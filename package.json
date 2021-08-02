@@ -11,8 +11,8 @@
     "gh-pages": "npm run examples && npm run docs",
     "lib": "cross-env NODE_ENV=production webpack --mode production && rm -fr ./lib/mass.js && rm -fr ./lib/mass.min.js ./lib/mass.min.js.map",
     "lint": "stylelint **/*.scss && eslint --ext .js --ext .jsx ./examples/",
-    "prelease": "standard-version --dry-run",
-    "release": "standard-version",
+    "prelease": "standard-version --dry-run -s",
+    "release": "standard-version -s",
     "start": "npm run dev"
   },
   "repository": {
