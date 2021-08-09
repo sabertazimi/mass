@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://github.com/sabertazimi/mass/compare/v1.0.3...v1.0.4) (2021-08-09)
+
+
+### Building Work
+
+* **deps-dev:** bump @babel/core from 7.14.8 to 7.15.0 ([11fabfd](https://github.com/sabertazimi/mass/commit/11fabfd7db3287599c0591f7de51ebf1c188713e))
+* **deps-dev:** bump @babel/eslint-parser from 7.14.9 to 7.15.0 ([af8edfc](https://github.com/sabertazimi/mass/commit/af8edfc696cbdcf4af636260e4141775a1e72ea1))
+* **deps-dev:** bump @babel/preset-env from 7.14.9 to 7.15.0 ([5a32511](https://github.com/sabertazimi/mass/commit/5a32511c079e588f28c3eb8e19b3912b87d8e8b7))
+* **deps-dev:** bump eslint-plugin-import from 2.23.4 to 2.24.0 ([8e35ce4](https://github.com/sabertazimi/mass/commit/8e35ce49ee020b873371710df37d940a2a630252))
+* **deps-dev:** bump mini-css-extract-plugin from 2.1.0 to 2.2.0 ([0de2c52](https://github.com/sabertazimi/mass/commit/0de2c52aa392de5d5a242b8e13e37e95b91e6a08))
+* **deps-dev:** bump to latest version ([524adc3](https://github.com/sabertazimi/mass/commit/524adc36076367a2a50188de397c429365e3ef87))
+* **deps-dev:** bump webpack from 5.48.0 to 5.49.0 ([8fb5157](https://github.com/sabertazimi/mass/commit/8fb515784a326dd61dcbed67c0164d92858d5c96))
+
 ### [1.0.3](https://github.com/sabertazimi/mass/compare/v1.0.2...v1.0.3) (2021-08-02)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@sabertazimi/mass",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A minimal sass-based UI library",
   "main": "./lib/mass.min.css",
   "scripts": {
