@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://github.com/sabertazimi/mass/compare/v1.0.4...v1.0.5) (2021-08-16)
+
+
+### Building Work
+
+* **deps-dev:** bump webpack from 5.49.0 to 5.50.0 ([913ccb2](https://github.com/sabertazimi/mass/commit/913ccb20386e39a1a56ffe4ffd963ca04cfb1cd0))
+* **deps-dev:** bump webpack-cli from 4.7.2 to 4.8.0 ([f7b0e0c](https://github.com/sabertazimi/mass/commit/f7b0e0c40cdb11cb3fc93aee6e02481863e8b0ea))
+* **deps-webpack:** bump to latest version ([54569ec](https://github.com/sabertazimi/mass/commit/54569ecb85aa7a3b4553be018542105ef139d660))
+
 ### [1.0.4](https://github.com/sabertazimi/mass/compare/v1.0.3...v1.0.4) (2021-08-09)
 
 
