@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/sabertazimi/mass/compare/v1.0.5...v1.1.0) (2021-08-19)
+
+
+### Building Work
+
+* **dependabot:** change pr limit from 15 to 10 ([8a1025f](https://github.com/sabertazimi/mass/commit/8a1025f84cea4fa0f7513d124dc0381ebf1f185e))
+* **deps-dev:** bump deps to latest version ([d4b7718](https://github.com/sabertazimi/mass/commit/d4b7718ef2b6fbf9109009c23637ff0455b1c8da))
+* **deps-dev:** bump stylelint-config-mass from 1.0.2 to 2.1.0 ([7b2ef3b](https://github.com/sabertazimi/mass/commit/7b2ef3b8d796f1ade31588de11b9cedb94156fcb))
+
 ### [1.0.5](https://github.com/sabertazimi/mass/compare/v1.0.4...v1.0.5) (2021-08-16)
 
 
