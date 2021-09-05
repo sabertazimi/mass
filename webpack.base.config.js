@@ -72,5 +72,5 @@ module.exports = (devMode, includeHtml) => ({
       mass: path.resolve(__dirname, 'src'),
     },
   },
-  devtool: 'source-map',
+  devtool: devMode ? 'eval-cheap-module-source-map' : false,
 });
