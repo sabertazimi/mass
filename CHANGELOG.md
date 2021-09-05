@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/sabertazimi/mass/compare/v1.1.0...v1.2.0) (2021-09-05)
+
+
+### Building Work
+
+* **CI:** remove redundant stage ([06a05c0](https://github.com/sabertazimi/mass/commit/06a05c087a2cee3f79a35dcca995d9d7926162f9))
+* **CI:** rename workflow ([0b7a7fe](https://github.com/sabertazimi/mass/commit/0b7a7feac594da0fc978b3fa5e107452de64ebd6))
+* **dependabot:** change versioning strategy ([0b42675](https://github.com/sabertazimi/mass/commit/0b42675f9a9053fec34039f5ddbaaa4cbe995e54))
+* **deps-dev:** bump @babel/core from 7.15.0 to 7.15.5 ([#98](https://github.com/sabertazimi/mass/issues/98)) ([5cdf2fd](https://github.com/sabertazimi/mass/commit/5cdf2fd4f0e59369fe8f15f721e9ec8a221fc344))
+* **deps-dev:** bump @babel/eslint-parser from 7.15.0 to 7.15.4 ([#95](https://github.com/sabertazimi/mass/issues/95)) ([1851324](https://github.com/sabertazimi/mass/commit/1851324b53e3afe800738eb615c9e867a9738b74))
+* **deps-dev:** bump @babel/preset-env from 7.15.0 to 7.15.4 ([#91](https://github.com/sabertazimi/mass/issues/91)) ([28ace43](https://github.com/sabertazimi/mass/commit/28ace43d7acab57800c7864bf5548bcf06ba2c32))
+* **deps-dev:** bump autoprefixer from 10.3.2 to 10.3.3 ([9694517](https://github.com/sabertazimi/mass/commit/9694517e19115e034c6278fc1d0335bb2be98f6e))
+* **deps-dev:** bump autoprefixer from 10.3.3 to 10.3.4 ([#97](https://github.com/sabertazimi/mass/issues/97)) ([531f06a](https://github.com/sabertazimi/mass/commit/531f06a2669a678afbbdbce0669bb9dcfcb56c0f))
+* **deps-dev:** bump clean-webpack-plugin from 3.0.0 to 4.0.0 ([#96](https://github.com/sabertazimi/mass/issues/96)) ([dc473d5](https://github.com/sabertazimi/mass/commit/dc473d54491e2e5f257aead9bd9d486948939c58))
+* **deps-dev:** bump eslint-plugin-import from 2.24.1 to 2.24.2 ([342e243](https://github.com/sabertazimi/mass/commit/342e243f536efcc6f84ef808fa083b919c0a9e67))
+* **deps-dev:** bump eslint-plugin-react from 7.24.0 to 7.25.0 ([a8e9ae9](https://github.com/sabertazimi/mass/commit/a8e9ae9d6d97ba24dc4f0ea9ea9cf36436f83ad6))
+* **deps-dev:** bump eslint-plugin-react from 7.25.0 to 7.25.1 ([#89](https://github.com/sabertazimi/mass/issues/89)) ([0e16fb4](https://github.com/sabertazimi/mass/commit/0e16fb42da3e258397a40db3057699b78d86cafa))
+* **deps-dev:** bump mini-css-extract-plugin from 2.2.0 to 2.2.2 ([#92](https://github.com/sabertazimi/mass/issues/92)) ([d0f042d](https://github.com/sabertazimi/mass/commit/d0f042d9383b12ae350d310d3c59f19da251e38a))
+* **deps-dev:** bump stylelint-config-mass from 5.0.2 to 5.1.0 ([#90](https://github.com/sabertazimi/mass/issues/90)) ([16c3ce7](https://github.com/sabertazimi/mass/commit/16c3ce71ad497eb60f8be9008bf683d51e9e5614))
+* **deps-dev:** bump stylelint-config-mass from 5.1.0 to 5.3.2 ([#93](https://github.com/sabertazimi/mass/issues/93)) ([95416f7](https://github.com/sabertazimi/mass/commit/95416f7f0e520f8d7c6d98024e521ca62388fe80))
+* **deps-dev:** bump terser-webpack-plugin from 5.1.4 to 5.2.3 ([#100](https://github.com/sabertazimi/mass/issues/100)) ([9eb614e](https://github.com/sabertazimi/mass/commit/9eb614e3f80452dc0ea3e7a261cfc72fe542246d))
+* **deps-dev:** bump tp latest version ([38efbf6](https://github.com/sabertazimi/mass/commit/38efbf606721022d18b86ea7fc9af8eecf3ccf09))
+* **deps-dev:** bump webpack from 5.51.1 to 5.52.0 ([#99](https://github.com/sabertazimi/mass/issues/99)) ([5d96eca](https://github.com/sabertazimi/mass/commit/5d96eca1feaaa8dffcdc57d5289c1ff3ebe7e17a))
+* **deps-dev:** bump webpack-dev-server from 4.0.0 to 4.1.0 ([#94](https://github.com/sabertazimi/mass/issues/94)) ([fefdcb5](https://github.com/sabertazimi/mass/commit/fefdcb5ccc0080f63364de4caa6beef698767212))
+
 ## [1.1.0](https://github.com/sabertazimi/mass/compare/v1.0.5...v1.1.0) (2021-08-19)
 
 
