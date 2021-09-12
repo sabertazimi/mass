@@ -4,16 +4,16 @@
   "description": "A minimal sass-based UI library",
   "main": "./lib/mass.min.css",
   "scripts": {
-    "build": "npm run lib && npm run gh-pages",
+    "build": "yarn lib && yarn gh-pages",
     "dev": "cross-env NODE_ENV=development webpack serve --port 2333 --mode development --open --config webpack.examples.config.js",
     "docs": "sassdoc ./src --verbose --config .sassdocrc.json",
     "examples": "cross-env NODE_ENV=production webpack --mode production --config webpack.examples.config.js",
-    "gh-pages": "npm run examples && npm run docs",
+    "gh-pages": "yarn examples && yarn docs",
     "lib": "cross-env NODE_ENV=production webpack --mode production && rm -fr ./lib/mass.js && rm -fr ./lib/mass.min.js ./lib/mass.min.js.map",
     "lint": "stylelint **/*.scss && eslint --ext .js --ext .jsx ./examples/",
     "prelease": "standard-version --dry-run -s",
     "release": "standard-version -s",
-    "start": "npm run dev"
+    "start": "yarn dev"
   },
   "repository": {
     "type": "git",
@@ -57,6 +57,7 @@
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.2.2",
     "node-sass": "^6.0.1",
+    "postcss": "^8.3.6",
     "postcss-loader": "^6.1.1",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
