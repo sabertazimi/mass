@@ -1438,7 +1438,7 @@ __metadata:
     eslint-plugin-import: ^2.24.2
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.25.1
-    eslint-plugin-react-hooks: ^4.2.0
+    eslint-plugin-react-hooks: 4.2.0
     eslint-webpack-plugin: ^3.0.1
     html-loader: ^2.1.2
     html-webpack-plugin: ^5.3.2
@@ -1447,8 +1447,8 @@ __metadata:
     postcss: ^8.3.6
     postcss-loader: ^6.1.1
     prettier: ^2.3.2
-    react: ^17.0.2
-    react-dom: ^17.0.2
+    react: 17.0.2
+    react-dom: 17.0.2
     sass-loader: ^12.1.0
     sassdoc: ^2.7.3
     standard-version: ^9.3.1
@@ -4508,7 +4508,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^4.2.0":
+"eslint-plugin-react-hooks@npm:4.2.0":
   version: 4.2.0
   resolution: "eslint-plugin-react-hooks@npm:4.2.0"
   peerDependencies:
@@ -9244,7 +9244,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^17.0.2":
+"react-dom@npm:17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
   dependencies:
@@ -9264,7 +9264,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"react@npm:^17.0.2":
+"react@npm:17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
   dependencies:
