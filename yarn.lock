@@ -1414,9 +1414,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-basic@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@dg-scripts/eslint-config-basic@npm:1.1.0"
+"@dg-scripts/eslint-config-basic@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@dg-scripts/eslint-config-basic@npm:1.1.1"
   dependencies:
     eslint-config-standard: ^16.0.3
     eslint-plugin-eslint-comments: ^3.2.0
@@ -1431,61 +1431,61 @@ __metadata:
     yaml-eslint-parser: ^0.4.1
   peerDependencies:
     eslint: ^7.32.0
-  checksum: 3c0f7fe3c38f0538ed7d678d0d59fed36bd9cb27c874c7d6b470fbd3288f42c0523f50f113ef674eb21539cb39a159e0323a1cfc069b7fef2fd1477986382724
+  checksum: c7c7441d028aaa63af61193a2573f4a2c2a809f1d8bdb03d5bed91cafc9a66b61105a283cea3d0919fa19c8d32d38467f9758206e72c54759bcda4bfd960fc34
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-react@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@dg-scripts/eslint-config-react@npm:1.1.0"
+"@dg-scripts/eslint-config-react@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@dg-scripts/eslint-config-react@npm:1.1.1"
   dependencies:
     eslint-config-bod: ^5.3.10
   peerDependencies:
     eslint: ^7.32.0
-  checksum: 2840cf23e9cd0d9ab114ed1ce44a8f6c44531520dc685989e3a8e7fc969995df8e22dd63fc1c56eb054a7d2988818342721439729a78107e3b83be98484eae57
+  checksum: bb8dab98f158a3612ea33e11503ceae6926a853342f458876fdefb40eb8e1b879d412f22463929fd3595a7c58dc1f0fed15be4d89d7a958b9f543e331b878474
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-ts@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@dg-scripts/eslint-config-ts@npm:1.1.0"
+"@dg-scripts/eslint-config-ts@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@dg-scripts/eslint-config-ts@npm:1.1.1"
   dependencies:
-    "@dg-scripts/eslint-config-basic": ^1.1.0
+    "@dg-scripts/eslint-config-basic": ^1.1.1
     "@typescript-eslint/eslint-plugin": ^4.31.2
     "@typescript-eslint/parser": ^4.31.2
   peerDependencies:
     eslint: ^7.32.0
     typescript: ^4.0.0
-  checksum: e99c7a79609e903dc24ec90804435447565167640743a990d2bd92601c9dab20c8c931c5d1407544c2827e5fbdd435bc37c36140751c13b6947b3b2673e3d8d9
+  checksum: 4d7ddf0310f4b59b7e440b5ab424059b0ac2c086dd4d4fc872aecba9faeb9987dc224601f6178c4e1e8003474a521ab89d869acd03f8fc7d1aaa4b27781b29be
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-vue@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@dg-scripts/eslint-config-vue@npm:1.1.0"
+"@dg-scripts/eslint-config-vue@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@dg-scripts/eslint-config-vue@npm:1.1.1"
   dependencies:
-    "@dg-scripts/eslint-config-ts": ^1.1.0
+    "@dg-scripts/eslint-config-ts": ^1.1.1
     eslint-plugin-vue: ^7.17.0
   peerDependencies:
     eslint: ^7.32.0
     typescript: ^4.0.0
-  checksum: 4e8a8e49dfbe98824b5758cbbeefe01c642ac11fce3992b09a8d01850b526b8541332f66c2e502366b0279a057d0b98a4620c6016f599c1b137952fec4367667
+  checksum: 51c32b778c65318cd282e394c5c96b6064b3a0595aa6f56c36d185d4a0e4e8fa887b2775384ab03eb3f1971a0f2e838e1e76482e05baf74bd3c24adb4e64eefa
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@dg-scripts/eslint-config@npm:1.1.0"
+"@dg-scripts/eslint-config@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@dg-scripts/eslint-config@npm:1.1.1"
   dependencies:
-    "@dg-scripts/eslint-config-react": ^1.1.0
-    "@dg-scripts/eslint-config-vue": ^1.1.0
+    "@dg-scripts/eslint-config-react": ^1.1.1
+    "@dg-scripts/eslint-config-vue": ^1.1.1
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^4.0.0
   peerDependencies:
     eslint: ^7.32.0
     prettier: ^2.4.0
     typescript: ^4.0.0
-  checksum: c57507b920eb6a34dda285c56e512e36a4a334b6ed8ebc8d1cf66063b660d73f5793e2e68fe6b65b07019509628c2fd4ac6f1c08b0984b5334aa26fcd141e2a1
+  checksum: e92fab72f0ffd756f8b0e8f54113becfa4b961ad8054b06415a9d79fd633871cafbfe2f7120c338aa58cd62aff2d948d5edeaf9b86e2c375c77a4083281aec0e
   languageName: node
   linkType: hard
 
@@ -1607,7 +1607,7 @@ __metadata:
     "@babel/plugin-proposal-object-rest-spread": ^7.15.6
     "@babel/preset-env": ^7.15.6
     "@babel/preset-react": ^7.14.5
-    "@dg-scripts/eslint-config": ^1.1.0
+    "@dg-scripts/eslint-config": ^1.1.1
     autoprefixer: ^10.3.4
     babel-loader: ^8.2.2
     clean-webpack-plugin: ^4.0.0
