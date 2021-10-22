@@ -59,7 +59,7 @@
     "react-dom": "^17.0.2",
     "sass-loader": "^12.2.0",
     "sassdoc": "^2.7.3",
-    "standard-version": "^9.3.1",
+    "standard-version": "^9.3.2",
     "style-loader": "^3.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-mass": "^5.5.4",
