@@ -25,9 +25,10 @@ $grid-max-columns: 12 !default;
 .grid-container {
   @include clearfix;
   @include container;
-  
+
   .row {
     @include clearfix;
+
     display: block;
     width: 100%;
   }
@@ -37,12 +38,12 @@ $grid-max-columns: 12 !default;
 
 .flex-container {
   @include container;
+
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  
+
   .row {
     display: flex;
     flex-direction: row;
@@ -72,7 +73,7 @@ $grid-max-columns: 12 !default;
   .col-#{$i} {
     @include column($i);
   }
-  
+
   @for $j from 1 through ($i - 1) {
     .col-#{$j}-#{$i} {
       @include column($j, $i);
@@ -85,55 +86,55 @@ $grid-max-columns: 12 !default;
     .col-sm-#{$i} {
       @include column($i);
     }
-    
+
     @for $j from 1 through ($i - 1) {
       .col-sm-#{$j}-#{$i} {
         @include column($j, $i);
       }
     }
   }
-  
+
   @include respond-to(medium-only) {
     .col-md-#{$i} {
       @include column($i);
     }
-    
+
     @for $j from 1 through ($i - 1) {
       .col-md-#{$j}-#{$i} {
         @include column($j, $i);
       }
     }
   }
-  
+
   @include respond-to(large-only) {
     .col-lg-#{$i} {
       @include column($i);
     }
-    
+
     @for $j from 1 through ($i - 1) {
       .col-lg-#{$j}-#{$i} {
         @include column($j, $i);
       }
     }
   }
-  
+
   @include respond-to(xlarge-only) {
     .col-xl-#{$i} {
       @include column($i);
     }
-    
+
     @for $j from 1 through ($i - 1) {
       .col-xl-#{$j}-#{$i} {
         @include column($j, $i);
       }
     }
   }
-  
+
   @include respond-to(xxlarge-up) {
     .col-xxl-#{$i} {
       @include column($i);
     }
-    
+
     @for $j from 1 through ($i - 1) {
       .col-xxl-#{$j}-#{$i} {
         @include column($j, $i);

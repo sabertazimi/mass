@@ -6,49 +6,75 @@
 
 /// Font family stack
 /// @type List
-$font-stack: ('Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, 'Open Sans', Arial, sans-serif, serif) !default;
+$font-stack: (
+  'Raleway',
+  'HelveticaNeue',
+  'Helvetica Neue',
+  helvetica,
+  'Open Sans',
+  arial,
+  sans-serif,
+  serif
+) !default;
 
 /// Root text font scale ratio
 /// @type Number
 $root-scale-ratio: 100% !default;
 $root-base-size: 16px * ($root-scale-ratio / 100%) !default;
+
 /// Base text font size
 /// @type Length
 $text-base-size: 1rem !default;
+
 /// Scale ratio for font size
 /// @type Number
 $text-scale-ratio: 1.2 !default;
+$text-scale-ratio-2: ($text-scale-ratio * $text-scale-ratio);
+$text-scale-ratio-3: ($text-scale-ratio-2 * $text-scale-ratio);
+$text-scale-ratio-4: ($text-scale-ratio-3 * $text-scale-ratio);
+$text-scale-ratio-5: ($text-scale-ratio-4 * $text-scale-ratio);
+$text-scale-ratio-6: ($text-scale-ratio-5 * $text-scale-ratio);
 
 /// Text font-size group
 /// @type Length
-$text-xxxsmall: ($text-base-size / ($text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio)) !default;
+$text-xxxsmall: ($text-base-size / $text-scale-ratio-4) !default;
+
 /// Text font-size group
 /// @type Length
-$text-xxsmall: ($text-base-size / ($text-scale-ratio * $text-scale-ratio * $text-scale-ratio)) !default;
+$text-xxsmall: ($text-base-size / $text-scale-ratio-3) !default;
+
 /// Text font-size group
 /// @type Length
-$text-xsmall: ($text-base-size / ($text-scale-ratio * $text-scale-ratio)) !default;
+$text-xsmall: ($text-base-size / $text-scale-ratio-2) !default;
+
 /// Text font-size group
 /// @type Length
 $text-small: ($text-base-size / $text-scale-ratio) !default;
+
 /// Text font-size group
 /// @type Length
 $text-medium: ($text-base-size * $text-scale-ratio) !default;
+
 /// Text font-size group
 /// @type Length
-$text-large: ($text-base-size * $text-scale-ratio * $text-scale-ratio) !default;
+$text-large: ($text-base-size * $text-scale-ratio-2) !default;
+
 /// Text font-size group
 /// @type Length
-$text-xlarge: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
+$text-xlarge: ($text-base-size * $text-scale-ratio-3) !default;
+
 /// Text font-size group
 /// @type Length
-$text-xxlarge: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
+$text-xxlarge: ($text-base-size * $text-scale-ratio-4) !default;
+
 /// Text font-size group
 /// @type Length
-$text-xxxlarge: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
+$text-xxxlarge: ($text-base-size * $text-scale-ratio-5) !default;
+
 /// Text font-size group
 /// @type Length
-$text-xxxxlarge: ($text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio) !default;
+$text-xxxxlarge: ($text-base-size * $text-scale-ratio-6) !default;
+
 /// Font size map
 /// @type Map
 /// @prop {String} key - name of font size

@@ -15,15 +15,15 @@ form legend {
   @if type-of($suffix) == number {
     .text-#{$name} {
       color: $color !important;
-      
+
       @include bem-on-event {
         color: $color !important;
       }
     }
-    
+
     .bg-#{$name} {
       background-color: $color !important;
-      
+
       @include bem-on-event {
         background-color: $color !important;
       }
@@ -31,7 +31,7 @@ form legend {
 
     .border-#{$name} {
       border: 1px solid $color !important;
-      
+
       @include bem-on-event {
         border: 1px solid $color !important;
       }
@@ -39,15 +39,15 @@ form legend {
   } @else {
     .text-#{$name}-#{$suffix} {
       color: $color !important;
-      
+
       @include bem-on-event {
         color: $color !important;
       }
     }
-    
+
     .bg-#{$name}-#{$suffix} {
       background-color: $color !important;
-      
+
       @include bem-on-event {
         background-color: $color !important;
       }
@@ -55,7 +55,7 @@ form legend {
 
     .border-#{$name}-#{$suffix} {
       border: 1px solid $color !important;
-      
+
       @include bem-on-event {
         border: 1px solid $color !important;
       }
@@ -68,10 +68,10 @@ form legend {
 
 /* color helper class */
 @each $color-list, $selector in $color-lists {
-  $primary-color: map-get($color-list , $color-primary-depth);
+  $primary-color: map-get($color-list, $color-primary-depth);
 
   @include color-helper($selector, $primary-color);
-  
+
   @each $depth, $color in $color-list {
     @include color-helper($selector, $color, $depth);
   }

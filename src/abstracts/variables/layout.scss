@@ -17,12 +17,15 @@ $breakpoints: (
 /// Small size device breakpoint
 /// @type Length
 $bp-small: map-get($breakpoints, 'small') !default;
+
 /// Medium size device breakpoint
 /// @type Length
 $bp-medium: map-get($breakpoints, 'medium') !default;
+
 /// Large size device breakpoint
 /// @type Length
 $bp-large: map-get($breakpoints, 'large') !default;
+
 /// Extreme large size device breakpoint
 /// @type Length
 $bp-xlarge: map-get($breakpoints, 'xlarge') !default;
@@ -30,15 +33,19 @@ $bp-xlarge: map-get($breakpoints, 'xlarge') !default;
 /// Small device size range
 /// @type List
 $small-range: (0, $bp-small) !default;
+
 /// Medium device size range
 /// @type List
 $medium-range: ($bp-small + 1, $bp-medium) !default;
+
 /// Large device size range
 /// @type List
 $large-range: ($bp-medium + 1, $bp-large) !default;
+
 /// Extreme large device size range
 /// @type List
 $xlarge-range: ($bp-large + 1, $bp-xlarge) !default;
+
 /// Extreme-extreme large device size range
 /// @type List
 $xxlarge-range: ($bp-xlarge + 1) !default;

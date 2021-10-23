@@ -7,8 +7,8 @@ body {
 
   width: 100%;
   height: 100%;
-  color: $color-text;
   font-family: $font-stack;
+  color: $color-text;
 }
 
 /* vertical rhythm */
@@ -20,6 +20,30 @@ h5,
 form legend {
   margin-bottom: $space-xxs;
   line-height: $heading-line-height;
+}
+
+h1 {
+  @include font-size($text-xxxlarge);
+}
+
+h2 {
+  @include font-size($text-xxlarge);
+}
+
+h3 {
+  @include font-size($text-xlarge);
+}
+
+h4 {
+  @include font-size($text-large);
+}
+
+h5 {
+  @include font-size($text-medium);
+}
+
+small {
+  @include font-size($text-small);
 }
 
 p {
@@ -70,30 +94,6 @@ strong {
   .text-#{$name} {
     @include font-size($text-size);
   }
-}
-
-h1 {
-  @include font-size($text-xxxlarge);
-}
-
-h2 {
-  @include font-size($text-xxlarge);
-}
-
-h3 {
-  @include font-size($text-xlarge);
-}
-
-h4 {
-  @include font-size($text-large);
-}
-
-h5 {
-  @include font-size($text-medium);
-}
-
-small {
-  @include font-size($text-small);
 }
 
 .truncate {

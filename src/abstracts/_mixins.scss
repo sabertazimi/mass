@@ -166,19 +166,34 @@
 /// @param {Color} $color [$color-primary] - color of underline
 /// @param {Length} $height [3px] - height of underline
 @mixin underline($color: $color-primary, $height: 3px) {
+  @media screen and (prefers-reduced-motion: reduce) {
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: $height;
+      content: '';
+      background-color: $color;
+      transition: none;
+      transform: scaleX(0) translateX(50%);
+    }
+  }
+
   &::after {
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: scaleX(0) translateX(50%);
-    transition: transform 0.2s;
     width: 100%;
     height: $height;
-    background-color: $color;
     content: '';
+    background-color: $color;
+    transition: transform 0.2s;
+    transform: scaleX(0) translateX(50%);
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     transform: scaleX(1) translateX(0);
   }
 }
@@ -188,9 +203,9 @@
   position: absolute;
   width: 1px;
   height: 1px;
-  overflow: hidden;
-  margin: -1px;
   padding: 0;
-  border: 0;
+  margin: -1px;
+  overflow: hidden;
   clip: rect(0 0 0 0);
+  border: 0;
 }

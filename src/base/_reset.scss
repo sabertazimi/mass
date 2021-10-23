@@ -46,7 +46,7 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
+  font-family: monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -69,9 +69,9 @@ a {
 /* stylelint-disable */
 abbr[title] {
   border-bottom: none; /* 1 */
-  /* stylelint-enable */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
+  /* stylelint-enable */
 }
 
 /**
@@ -91,7 +91,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
+  font-family: monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -165,7 +165,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -175,7 +176,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -253,8 +255,8 @@ progress {
 
 textarea {
   overflow: auto;
-  resize: vertical;
   vertical-align: top;
+  resize: vertical;
 }
 
 /**
@@ -353,42 +355,95 @@ template {
  * Simple reset css style
  */
 /* stylelint-disable */
-html, body, div, span, applet, object, iframe, 
-header, footer, aside, section, article, nav
-h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, 
-cite, code, del, dfn, em, font, img, figure
-ins, kbd, q, s, samp, small, strike, 
-strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, 
-fieldset, form, label, legend, 
-table, caption, tbody, tfoot, thead, tr, th, td, 
-center, u, b, i { 
-/* stylelint-enable */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+header,
+footer,
+aside,
+section,
+article,
+nav h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+figure ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+center,
+u,
+b,
+i {
+  /* stylelint-enable */
   position: relative;
   box-sizing: border-box;
   padding: 0;
-  border: 0;
   color: inherit;
   vertical-align: baseline;
-} 
+  border: 0;
+}
 
-:focus { 
-  outline: 0;
-} 
-
-table { 
-  border-collapse: collapse;
+table {
   border-spacing: 0;
-} 
+  border-collapse: collapse;
+}
 
 blockquote::before,
 blockquote::after,
 q::before,
-q::after { 
+q::after {
   content: '';
-} 
+}
 
 blockquote,
-q { 
+q {
   quotes: '' '';
-} 
+}

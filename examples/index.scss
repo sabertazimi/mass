@@ -6,43 +6,86 @@ footer {
   padding: $space-md;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  a {
+    transition: none;
+  }
+}
+
 a {
   transition: color 0.3s;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .section-grid .row::before {
+    position: absolute;
+    top: 25%;
+    left: -$space-lg;
+    color: $color-primary;
+    transition: none;
+    transform: scale(0);
+  }
 }
 
 .section-grid .row::before {
   position: absolute;
   top: 25%;
   left: -$space-lg;
-  transform: scale(0);
-  transition: all 0.2s;
   color: $color-primary;
+  transition: all 0.2s;
+  transform: scale(0);
 }
 
-.section-grid .row:hover::before {
-  transform: scale(1);
+.section-grid .row:hover::before,
+.section-grid .row:focus::before {
   content: 'row';
+  transform: scale(1);
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .column {
+    padding: $space-sm;
+    color: $color-gray-0;
+    text-align: center;
+    background-color: $color-violet;
+    border: 1px solid $color-violet-3;
+    transition: none;
+  }
 }
 
 .column {
-  transition: background-color 0.3s;
   padding: $space-sm;
-  border: 1px solid $color-violet-3;
-  background-color: $color-violet;
   color: $color-gray-0;
   text-align: center;
+  background-color: $color-violet;
+  border: 1px solid $color-violet-3;
+  transition: background-color 0.3s;
 }
 
-.column:hover {
+.column:hover,
+.column:focus {
   background-color: $color-violet-6;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .navbar {
+    position: relative;
+    text-align: left;
+    transition: none;
+
+    &-toggle {
+      display: none;
+      cursor: pointer;
+    }
+  }
 }
 
 .navbar {
   position: relative;
-  transition: all 0.3s;
   text-align: left;
-  
-  &__toggle {
+  transition: all 0.3s;
+
+  &-toggle {
     display: none;
     cursor: pointer;
   }
@@ -50,76 +93,92 @@ a {
 
 .hamburger {
   display: none;
-  
+
   @include respond-to(small-only) {
+    @media screen and (prefers-reduced-motion: no-preference) {
+      &,
+      &::before,
+      &::after {
+        position: absolute;
+        display: block;
+        width: 2rem;
+        height: 5px;
+        cursor: pointer;
+        content: '';
+        background-color: $color-white;
+        border-radius: 1px;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
     &,
     &::before,
     &::after {
       position: absolute;
       display: block;
-      transition: all 0.3s ease-in-out;
       width: 2rem;
       height: 5px;
-      border-radius: 1px;
-      background-color: $color-white;
       cursor: pointer;
       content: '';
+      background-color: $color-white;
+      border-radius: 1px;
+      transition: none;
     }
-    
+
     &::before {
       top: -10px;
     }
-    
+
     &::after {
       top: 10px;
     }
-    
-    .navbar__toggle:checked ~ & {
+
+    .navbar-toggle:checked ~ & {
       background-color: transparent;
     }
-    
-    .navbar__toggle:checked ~ &::before {
+
+    .navbar-toggle:checked ~ &::before {
       transform: translateY(10px) rotate(45deg);
     }
-    
-    .navbar__toggle:checked ~ &::after {
+
+    .navbar-toggle:checked ~ &::after {
       transform: translateY(-10px) rotate(-45deg);
     }
   }
 }
 
-.navbar__content {
+.navbar-content {
   @include respond-to(small-only) {
-    transform: scale(0.5);
-    transition: all 0.3s ease-in-out;
     max-height: 0;
     overflow: hidden;
-    
-    .navbar__toggle:checked ~ & {
-      transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.5);
+
+    .navbar-toggle:checked ~ & {
       max-height: 100%;
+      transform: scale(1);
     }
   }
 }
 
 .nav {
-  list-style-type: none;
   list-style-position: inside;
-  
-  &__item {
+  list-style-type: none;
+
+  &-item {
     display: inline-block;
     margin: $space-md;
-    
+
     @include respond-to(small-only) {
       display: block;
       margin-right: 0;
       margin-left: 0;
     }
   }
-  
-  &__link {
+
+  &-link {
     text-decoration: none;
-    
+
     @include on-event {
       color: $color-violet-3;
     }

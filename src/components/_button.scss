@@ -1,43 +1,48 @@
 /// button module name
 /// @type String
 $btn-name: 'btn' !default;
+
 /// default button color
 /// @type Color
 $btn-color: $color-black !default;
-/// hover color 
+
+/// hover color
 /// @type Number
 $btn-hover: 30% !default;
+
 /// outline button border width
 /// @type Length
 $btn-outline-border: 1px !default;
+
 /// round button border radius
 /// @type Length
 $btn-round-radius: 5em !default;
+
 /// button hover animation time
 /// @type Time
 $btn-transition-time: 0.3s !default;
 
 @mixin btn-outline($color) {
-  border: $btn-outline-border solid $color;
-  background-color: $color-white;
   color: $color;
-    
+  background-color: $color-white;
+  border: $btn-outline-border solid $color;
+
   @include on-event {
-    background-color: $color;
     color: $color-white;
+    background-color: $color;
   }
 }
 
 .#{$btn-name} {
-  transition: all $btn-transition-time;
   min-width: 5em;
-  margin-bottom: $space-sm;
   padding: $space-xs $space-lg;
+  margin-bottom: $space-sm;
+  color: $color-white;
+  cursor: pointer;
+  background-color: $btn-color;
   border: $btn-outline-border solid transparent;
   border-radius: 1px;
-  background-color: $btn-color;
-  cursor: pointer;
-  color: $color-white;
+  transition: all $btn-transition-time;
 
   @include on-event {
     background-color: tint($btn-color, $btn-hover);
@@ -46,11 +51,11 @@ $btn-transition-time: 0.3s !default;
   &--bold {
     font-weight: bold;
   }
-  
+
   &--upper {
     text-transform: uppercase;
   }
-  
+
   &--block {
     display: block;
     width: 100%;
@@ -78,12 +83,12 @@ $btn-transition-time: 0.3s !default;
 @each $key, $value in $color-main-list {
   .#{$btn-name}--#{$key} {
     background-color: $value;
-    
+
     @include on-event {
       background: tint($value, $btn-hover);
     }
   }
-  
+
   .#{$btn-name}--outline-#{$key} {
     @include btn-outline($value);
   }
