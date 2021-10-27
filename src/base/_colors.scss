@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 /* color default config */
 body {
   color: $color-text;
@@ -68,7 +70,7 @@ form legend {
 
 /* color helper class */
 @each $color-list, $selector in $color-lists {
-  $primary-color: map-get($color-list, $color-primary-depth);
+  $primary-color: map.get($color-list, $color-primary-depth);
 
   @include color-helper($selector, $primary-color);
 

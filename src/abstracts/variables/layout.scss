@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 ////
 /// Global layout variablse defination
 /// @group Layout
@@ -16,19 +18,19 @@ $breakpoints: (
 
 /// Small size device breakpoint
 /// @type Length
-$bp-small: map-get($breakpoints, 'small') !default;
+$bp-small: map.get($breakpoints, 'small') !default;
 
 /// Medium size device breakpoint
 /// @type Length
-$bp-medium: map-get($breakpoints, 'medium') !default;
+$bp-medium: map.get($breakpoints, 'medium') !default;
 
 /// Large size device breakpoint
 /// @type Length
-$bp-large: map-get($breakpoints, 'large') !default;
+$bp-large: map.get($breakpoints, 'large') !default;
 
 /// Extreme large size device breakpoint
 /// @type Length
-$bp-xlarge: map-get($breakpoints, 'xlarge') !default;
+$bp-xlarge: map.get($breakpoints, 'xlarge') !default;
 
 /// Small device size range
 /// @type List

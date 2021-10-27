@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 /// Max number of columns
 /// @type Number
 $grid-max-columns: 12 !default;
@@ -8,8 +10,8 @@ $grid-max-columns: 12 !default;
 /// @return {Number} percent ratio of column width
 /// @require $grid-max-columns
 @function floor-width($i, $max: $grid-max-columns) {
-  $width: floor(100 * 100 * $i / $max) / 100;
-  @return $width#{'%'};
+  $width: math.div($i, $max);
+  @return math.percentage($width);
 }
 
 /// column generator

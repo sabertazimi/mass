@@ -1,3 +1,6 @@
+@use 'sass:math';
+@use 'sass:map';
+
 ////
 /// Global function helpers
 /// @group Global
@@ -11,12 +14,12 @@
 /// @return {Number}
 /// @require $z-indexes
 @function z($layer) {
-  @if not map-has-key($z-indexes, $layer) {
-    @error 'There is no layer named `#{$layer}` in $z-indexes. ' + 'Layer should be one of #{map-keys($z-indexes)}.';
+  @if not map.has-key($z-indexes, $layer) {
+    @error 'There is no layer named `#{$layer}` in $z-indexes. ' + 'Layer should be one of #{map.keys($z-indexes)}.';
     @return null;
   }
 
-  @return map-get($z-indexes, $layer);
+  @return map.get($z-indexes, $layer);
 }
 
 /// Slightly lighten a color
@@ -62,5 +65,5 @@
     @return $rem;
   }
 
-  @return $root-base-size * ($rem / 1rem);
+  @return $root-base-size * math.div($rem, 1rem);
 }

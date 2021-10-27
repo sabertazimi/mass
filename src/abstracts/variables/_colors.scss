@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 ////
 /// Global color palette from `yeun/open-color`
 /// applied small modification by `sabertazimi`
@@ -24,16 +26,16 @@ $color-gray-list: (
   '8': #343a40,
   '9': #212529,
 ) !default;
-$color-gray-0: map-get($color-gray-list, '0') !default;
-$color-gray-1: map-get($color-gray-list, '1') !default;
-$color-gray-2: map-get($color-gray-list, '2') !default;
-$color-gray-3: map-get($color-gray-list, '3') !default;
-$color-gray-4: map-get($color-gray-list, '4') !default;
-$color-gray-5: map-get($color-gray-list, '5') !default;
-$color-gray-6: map-get($color-gray-list, '6') !default;
-$color-gray-7: map-get($color-gray-list, '7') !default;
-$color-gray-8: map-get($color-gray-list, '8') !default;
-$color-gray-9: map-get($color-gray-list, '9') !default;
+$color-gray-0: map.get($color-gray-list, '0') !default;
+$color-gray-1: map.get($color-gray-list, '1') !default;
+$color-gray-2: map.get($color-gray-list, '2') !default;
+$color-gray-3: map.get($color-gray-list, '3') !default;
+$color-gray-4: map.get($color-gray-list, '4') !default;
+$color-gray-5: map.get($color-gray-list, '5') !default;
+$color-gray-6: map.get($color-gray-list, '6') !default;
+$color-gray-7: map.get($color-gray-list, '7') !default;
+$color-gray-8: map.get($color-gray-list, '8') !default;
+$color-gray-9: map.get($color-gray-list, '9') !default;
 
 /// Color palette list
 /// @access private
@@ -52,16 +54,16 @@ $color-red-list: (
   '8': #e03131,
   '9': #c92a2a,
 ) !default;
-$color-red-0: map-get($color-red-list, '0') !default;
-$color-red-1: map-get($color-red-list, '1') !default;
-$color-red-2: map-get($color-red-list, '2') !default;
-$color-red-3: map-get($color-red-list, '3') !default;
-$color-red-4: map-get($color-red-list, '4') !default;
-$color-red-5: map-get($color-red-list, '5') !default;
-$color-red-6: map-get($color-red-list, '6') !default;
-$color-red-7: map-get($color-red-list, '7') !default;
-$color-red-8: map-get($color-red-list, '8') !default;
-$color-red-9: map-get($color-red-list, '9') !default;
+$color-red-0: map.get($color-red-list, '0') !default;
+$color-red-1: map.get($color-red-list, '1') !default;
+$color-red-2: map.get($color-red-list, '2') !default;
+$color-red-3: map.get($color-red-list, '3') !default;
+$color-red-4: map.get($color-red-list, '4') !default;
+$color-red-5: map.get($color-red-list, '5') !default;
+$color-red-6: map.get($color-red-list, '6') !default;
+$color-red-7: map.get($color-red-list, '7') !default;
+$color-red-8: map.get($color-red-list, '8') !default;
+$color-red-9: map.get($color-red-list, '9') !default;
 
 /// Color palette list
 /// @access private
@@ -80,16 +82,16 @@ $color-pink-list: (
   '8': #c2255c,
   '9': #a61e4d,
 ) !default;
-$color-pink-0: map-get($color-pink-list, '0') !default;
-$color-pink-1: map-get($color-pink-list, '1') !default;
-$color-pink-2: map-get($color-pink-list, '2') !default;
-$color-pink-3: map-get($color-pink-list, '3') !default;
-$color-pink-4: map-get($color-pink-list, '4') !default;
-$color-pink-5: map-get($color-pink-list, '5') !default;
-$color-pink-6: map-get($color-pink-list, '6') !default;
-$color-pink-7: map-get($color-pink-list, '7') !default;
-$color-pink-8: map-get($color-pink-list, '8') !default;
-$color-pink-9: map-get($color-pink-list, '9') !default;
+$color-pink-0: map.get($color-pink-list, '0') !default;
+$color-pink-1: map.get($color-pink-list, '1') !default;
+$color-pink-2: map.get($color-pink-list, '2') !default;
+$color-pink-3: map.get($color-pink-list, '3') !default;
+$color-pink-4: map.get($color-pink-list, '4') !default;
+$color-pink-5: map.get($color-pink-list, '5') !default;
+$color-pink-6: map.get($color-pink-list, '6') !default;
+$color-pink-7: map.get($color-pink-list, '7') !default;
+$color-pink-8: map.get($color-pink-list, '8') !default;
+$color-pink-9: map.get($color-pink-list, '9') !default;
 
 /// Color palette list
 /// @access private
@@ -108,16 +110,16 @@ $color-grape-list: (
   '8': #9c36b5,
   '9': #862e9c,
 ) !default;
-$color-grape-0: map-get($color-grape-list, '0') !default;
-$color-grape-1: map-get($color-grape-list, '1') !default;
-$color-grape-2: map-get($color-grape-list, '2') !default;
-$color-grape-3: map-get($color-grape-list, '3') !default;
-$color-grape-4: map-get($color-grape-list, '4') !default;
-$color-grape-5: map-get($color-grape-list, '5') !default;
-$color-grape-6: map-get($color-grape-list, '6') !default;
-$color-grape-7: map-get($color-grape-list, '7') !default;
-$color-grape-8: map-get($color-grape-list, '8') !default;
-$color-grape-9: map-get($color-grape-list, '9') !default;
+$color-grape-0: map.get($color-grape-list, '0') !default;
+$color-grape-1: map.get($color-grape-list, '1') !default;
+$color-grape-2: map.get($color-grape-list, '2') !default;
+$color-grape-3: map.get($color-grape-list, '3') !default;
+$color-grape-4: map.get($color-grape-list, '4') !default;
+$color-grape-5: map.get($color-grape-list, '5') !default;
+$color-grape-6: map.get($color-grape-list, '6') !default;
+$color-grape-7: map.get($color-grape-list, '7') !default;
+$color-grape-8: map.get($color-grape-list, '8') !default;
+$color-grape-9: map.get($color-grape-list, '9') !default;
 
 /// Color palette list
 /// @access private
@@ -136,16 +138,16 @@ $color-violet-list: (
   '8': #6741d9,
   '9': #5f3dc4,
 ) !default;
-$color-violet-0: map-get($color-violet-list, '0') !default;
-$color-violet-1: map-get($color-violet-list, '1') !default;
-$color-violet-2: map-get($color-violet-list, '2') !default;
-$color-violet-3: map-get($color-violet-list, '3') !default;
-$color-violet-4: map-get($color-violet-list, '4') !default;
-$color-violet-5: map-get($color-violet-list, '5') !default;
-$color-violet-6: map-get($color-violet-list, '6') !default;
-$color-violet-7: map-get($color-violet-list, '7') !default;
-$color-violet-8: map-get($color-violet-list, '8') !default;
-$color-violet-9: map-get($color-violet-list, '9') !default;
+$color-violet-0: map.get($color-violet-list, '0') !default;
+$color-violet-1: map.get($color-violet-list, '1') !default;
+$color-violet-2: map.get($color-violet-list, '2') !default;
+$color-violet-3: map.get($color-violet-list, '3') !default;
+$color-violet-4: map.get($color-violet-list, '4') !default;
+$color-violet-5: map.get($color-violet-list, '5') !default;
+$color-violet-6: map.get($color-violet-list, '6') !default;
+$color-violet-7: map.get($color-violet-list, '7') !default;
+$color-violet-8: map.get($color-violet-list, '8') !default;
+$color-violet-9: map.get($color-violet-list, '9') !default;
 
 /// Color palette list
 /// @access private
@@ -164,16 +166,16 @@ $color-indigo-list: (
   '8': #3b5bdb,
   '9': #364fc7,
 ) !default;
-$color-indigo-0: map-get($color-indigo-list, '0') !default;
-$color-indigo-1: map-get($color-indigo-list, '1') !default;
-$color-indigo-2: map-get($color-indigo-list, '2') !default;
-$color-indigo-3: map-get($color-indigo-list, '3') !default;
-$color-indigo-4: map-get($color-indigo-list, '4') !default;
-$color-indigo-5: map-get($color-indigo-list, '5') !default;
-$color-indigo-6: map-get($color-indigo-list, '6') !default;
-$color-indigo-7: map-get($color-indigo-list, '7') !default;
-$color-indigo-8: map-get($color-indigo-list, '8') !default;
-$color-indigo-9: map-get($color-indigo-list, '9') !default;
+$color-indigo-0: map.get($color-indigo-list, '0') !default;
+$color-indigo-1: map.get($color-indigo-list, '1') !default;
+$color-indigo-2: map.get($color-indigo-list, '2') !default;
+$color-indigo-3: map.get($color-indigo-list, '3') !default;
+$color-indigo-4: map.get($color-indigo-list, '4') !default;
+$color-indigo-5: map.get($color-indigo-list, '5') !default;
+$color-indigo-6: map.get($color-indigo-list, '6') !default;
+$color-indigo-7: map.get($color-indigo-list, '7') !default;
+$color-indigo-8: map.get($color-indigo-list, '8') !default;
+$color-indigo-9: map.get($color-indigo-list, '9') !default;
 
 /// Color palette list
 /// @access private
@@ -192,16 +194,16 @@ $color-blue-list: (
   '8': #1971c2,
   '9': #1864ab,
 ) !default;
-$color-blue-0: map-get($color-blue-list, '0') !default;
-$color-blue-1: map-get($color-blue-list, '1') !default;
-$color-blue-2: map-get($color-blue-list, '2') !default;
-$color-blue-3: map-get($color-blue-list, '3') !default;
-$color-blue-4: map-get($color-blue-list, '4') !default;
-$color-blue-5: map-get($color-blue-list, '5') !default;
-$color-blue-6: map-get($color-blue-list, '6') !default;
-$color-blue-7: map-get($color-blue-list, '7') !default;
-$color-blue-8: map-get($color-blue-list, '8') !default;
-$color-blue-9: map-get($color-blue-list, '9') !default;
+$color-blue-0: map.get($color-blue-list, '0') !default;
+$color-blue-1: map.get($color-blue-list, '1') !default;
+$color-blue-2: map.get($color-blue-list, '2') !default;
+$color-blue-3: map.get($color-blue-list, '3') !default;
+$color-blue-4: map.get($color-blue-list, '4') !default;
+$color-blue-5: map.get($color-blue-list, '5') !default;
+$color-blue-6: map.get($color-blue-list, '6') !default;
+$color-blue-7: map.get($color-blue-list, '7') !default;
+$color-blue-8: map.get($color-blue-list, '8') !default;
+$color-blue-9: map.get($color-blue-list, '9') !default;
 
 /// Color palette list
 /// @access private
@@ -220,16 +222,16 @@ $color-cyan-list: (
   '8': #0c8599,
   '9': #0b7285,
 ) !default;
-$color-cyan-0: map-get($color-cyan-list, '0') !default;
-$color-cyan-1: map-get($color-cyan-list, '1') !default;
-$color-cyan-2: map-get($color-cyan-list, '2') !default;
-$color-cyan-3: map-get($color-cyan-list, '3') !default;
-$color-cyan-4: map-get($color-cyan-list, '4') !default;
-$color-cyan-5: map-get($color-cyan-list, '5') !default;
-$color-cyan-6: map-get($color-cyan-list, '6') !default;
-$color-cyan-7: map-get($color-cyan-list, '7') !default;
-$color-cyan-8: map-get($color-cyan-list, '8') !default;
-$color-cyan-9: map-get($color-cyan-list, '9') !default;
+$color-cyan-0: map.get($color-cyan-list, '0') !default;
+$color-cyan-1: map.get($color-cyan-list, '1') !default;
+$color-cyan-2: map.get($color-cyan-list, '2') !default;
+$color-cyan-3: map.get($color-cyan-list, '3') !default;
+$color-cyan-4: map.get($color-cyan-list, '4') !default;
+$color-cyan-5: map.get($color-cyan-list, '5') !default;
+$color-cyan-6: map.get($color-cyan-list, '6') !default;
+$color-cyan-7: map.get($color-cyan-list, '7') !default;
+$color-cyan-8: map.get($color-cyan-list, '8') !default;
+$color-cyan-9: map.get($color-cyan-list, '9') !default;
 
 /// Color palette list
 /// @access private
@@ -248,16 +250,16 @@ $color-teal-list: (
   '8': #099268,
   '9': #087f5b,
 ) !default;
-$color-teal-0: map-get($color-teal-list, '0') !default;
-$color-teal-1: map-get($color-teal-list, '1') !default;
-$color-teal-2: map-get($color-teal-list, '2') !default;
-$color-teal-3: map-get($color-teal-list, '3') !default;
-$color-teal-4: map-get($color-teal-list, '4') !default;
-$color-teal-5: map-get($color-teal-list, '5') !default;
-$color-teal-6: map-get($color-teal-list, '6') !default;
-$color-teal-7: map-get($color-teal-list, '7') !default;
-$color-teal-8: map-get($color-teal-list, '8') !default;
-$color-teal-9: map-get($color-teal-list, '9') !default;
+$color-teal-0: map.get($color-teal-list, '0') !default;
+$color-teal-1: map.get($color-teal-list, '1') !default;
+$color-teal-2: map.get($color-teal-list, '2') !default;
+$color-teal-3: map.get($color-teal-list, '3') !default;
+$color-teal-4: map.get($color-teal-list, '4') !default;
+$color-teal-5: map.get($color-teal-list, '5') !default;
+$color-teal-6: map.get($color-teal-list, '6') !default;
+$color-teal-7: map.get($color-teal-list, '7') !default;
+$color-teal-8: map.get($color-teal-list, '8') !default;
+$color-teal-9: map.get($color-teal-list, '9') !default;
 
 /// Color palette list
 /// @access private
@@ -276,16 +278,16 @@ $color-green-list: (
   '8': #2f9e44,
   '9': #2b8a3e,
 ) !default;
-$color-green-0: map-get($color-green-list, '0') !default;
-$color-green-1: map-get($color-green-list, '1') !default;
-$color-green-2: map-get($color-green-list, '2') !default;
-$color-green-3: map-get($color-green-list, '3') !default;
-$color-green-4: map-get($color-green-list, '4') !default;
-$color-green-5: map-get($color-green-list, '5') !default;
-$color-green-6: map-get($color-green-list, '6') !default;
-$color-green-7: map-get($color-green-list, '7') !default;
-$color-green-8: map-get($color-green-list, '8') !default;
-$color-green-9: map-get($color-green-list, '9') !default;
+$color-green-0: map.get($color-green-list, '0') !default;
+$color-green-1: map.get($color-green-list, '1') !default;
+$color-green-2: map.get($color-green-list, '2') !default;
+$color-green-3: map.get($color-green-list, '3') !default;
+$color-green-4: map.get($color-green-list, '4') !default;
+$color-green-5: map.get($color-green-list, '5') !default;
+$color-green-6: map.get($color-green-list, '6') !default;
+$color-green-7: map.get($color-green-list, '7') !default;
+$color-green-8: map.get($color-green-list, '8') !default;
+$color-green-9: map.get($color-green-list, '9') !default;
 
 /// Color palette list
 /// @access private
@@ -304,16 +306,16 @@ $color-lime-list: (
   '8': #66a80f,
   '9': #5c940d,
 ) !default;
-$color-lime-0: map-get($color-lime-list, '0') !default;
-$color-lime-1: map-get($color-lime-list, '1');
-$color-lime-2: map-get($color-lime-list, '2') !default;
-$color-lime-3: map-get($color-lime-list, '3') !default;
-$color-lime-4: map-get($color-lime-list, '4') !default;
-$color-lime-5: map-get($color-lime-list, '5') !default;
-$color-lime-6: map-get($color-lime-list, '6') !default;
-$color-lime-7: map-get($color-lime-list, '7') !default;
-$color-lime-8: map-get($color-lime-list, '8') !default;
-$color-lime-9: map-get($color-lime-list, '9') !default;
+$color-lime-0: map.get($color-lime-list, '0') !default;
+$color-lime-1: map.get($color-lime-list, '1') !default;
+$color-lime-2: map.get($color-lime-list, '2') !default;
+$color-lime-3: map.get($color-lime-list, '3') !default;
+$color-lime-4: map.get($color-lime-list, '4') !default;
+$color-lime-5: map.get($color-lime-list, '5') !default;
+$color-lime-6: map.get($color-lime-list, '6') !default;
+$color-lime-7: map.get($color-lime-list, '7') !default;
+$color-lime-8: map.get($color-lime-list, '8') !default;
+$color-lime-9: map.get($color-lime-list, '9') !default;
 
 /// Color palette list
 /// @access private
@@ -332,16 +334,16 @@ $color-yellow-list: (
   '8': #f08c00,
   '9': #e67700,
 ) !default;
-$color-yellow-0: map-get($color-yellow-list, '0') !default;
-$color-yellow-1: map-get($color-yellow-list, '1') !default;
-$color-yellow-2: map-get($color-yellow-list, '2') !default;
-$color-yellow-3: map-get($color-yellow-list, '3') !default;
-$color-yellow-4: map-get($color-yellow-list, '4') !default;
-$color-yellow-5: map-get($color-yellow-list, '5') !default;
-$color-yellow-6: map-get($color-yellow-list, '6') !default;
-$color-yellow-7: map-get($color-yellow-list, '7') !default;
-$color-yellow-8: map-get($color-yellow-list, '8') !default;
-$color-yellow-9: map-get($color-yellow-list, '9') !default;
+$color-yellow-0: map.get($color-yellow-list, '0') !default;
+$color-yellow-1: map.get($color-yellow-list, '1') !default;
+$color-yellow-2: map.get($color-yellow-list, '2') !default;
+$color-yellow-3: map.get($color-yellow-list, '3') !default;
+$color-yellow-4: map.get($color-yellow-list, '4') !default;
+$color-yellow-5: map.get($color-yellow-list, '5') !default;
+$color-yellow-6: map.get($color-yellow-list, '6') !default;
+$color-yellow-7: map.get($color-yellow-list, '7') !default;
+$color-yellow-8: map.get($color-yellow-list, '8') !default;
+$color-yellow-9: map.get($color-yellow-list, '9') !default;
 
 /// Color palette list
 /// @access private
@@ -360,16 +362,16 @@ $color-orange-list: (
   '8': #e8590c,
   '9': #d9480f,
 ) !default;
-$color-orange-0: map-get($color-orange-list, '0') !default;
-$color-orange-1: map-get($color-orange-list, '1') !default;
-$color-orange-2: map-get($color-orange-list, '2') !default;
-$color-orange-3: map-get($color-orange-list, '3') !default;
-$color-orange-4: map-get($color-orange-list, '4') !default;
-$color-orange-5: map-get($color-orange-list, '5') !default;
-$color-orange-6: map-get($color-orange-list, '6') !default;
-$color-orange-7: map-get($color-orange-list, '7') !default;
-$color-orange-8: map-get($color-orange-list, '8') !default;
-$color-orange-9: map-get($color-orange-list, '9') !default;
+$color-orange-0: map.get($color-orange-list, '0') !default;
+$color-orange-1: map.get($color-orange-list, '1') !default;
+$color-orange-2: map.get($color-orange-list, '2') !default;
+$color-orange-3: map.get($color-orange-list, '3') !default;
+$color-orange-4: map.get($color-orange-list, '4') !default;
+$color-orange-5: map.get($color-orange-list, '5') !default;
+$color-orange-6: map.get($color-orange-list, '6') !default;
+$color-orange-7: map.get($color-orange-list, '7') !default;
+$color-orange-8: map.get($color-orange-list, '8') !default;
+$color-orange-9: map.get($color-orange-list, '9') !default;
 
 /// total number of color palette
 /// @access private
@@ -405,67 +407,67 @@ $color-primary-depth: '7' !default;
 /// Gray color
 /// @access public
 /// @type Color
-$color-gray: map-get($color-gray-list, $color-primary-depth) !default;
+$color-gray: map.get($color-gray-list, $color-primary-depth) !default;
 
 /// Red color
 /// @access public
 /// @type Color
-$color-red: map-get($color-red-list, $color-primary-depth) !default;
+$color-red: map.get($color-red-list, $color-primary-depth) !default;
 
 /// Pink color
 /// @access public
 /// @type Color
-$color-pink: map-get($color-pink-list, $color-primary-depth) !default;
+$color-pink: map.get($color-pink-list, $color-primary-depth) !default;
 
 /// Grape color
 /// @access public
 /// @type Color
-$color-grape: map-get($color-grape-list, $color-primary-depth) !default;
+$color-grape: map.get($color-grape-list, $color-primary-depth) !default;
 
 /// Violet color
 /// @access public
 /// @type Color
-$color-violet: map-get($color-violet-list, $color-primary-depth) !default;
+$color-violet: map.get($color-violet-list, $color-primary-depth) !default;
 
 /// Indigo color
 /// @access public
 /// @type Color
-$color-indigo: map-get($color-indigo-list, $color-primary-depth) !default;
+$color-indigo: map.get($color-indigo-list, $color-primary-depth) !default;
 
 /// Blue color
 /// @access public
 /// @type Color
-$color-blue: map-get($color-blue-list, $color-primary-depth) !default;
+$color-blue: map.get($color-blue-list, $color-primary-depth) !default;
 
 /// Cyan color
 /// @access public
 /// @type Color
-$color-cyan: map-get($color-cyan-list, $color-primary-depth) !default;
+$color-cyan: map.get($color-cyan-list, $color-primary-depth) !default;
 
 /// Teal color
 /// @access public
 /// @type Color
-$color-teal: map-get($color-teal-list, $color-primary-depth) !default;
+$color-teal: map.get($color-teal-list, $color-primary-depth) !default;
 
 /// Green color
 /// @access public
 /// @type Color
-$color-green: map-get($color-green-list, $color-primary-depth) !default;
+$color-green: map.get($color-green-list, $color-primary-depth) !default;
 
 /// Lime color
 /// @access public
 /// @type Color
-$color-lime: map-get($color-lime-list, $color-primary-depth) !default;
+$color-lime: map.get($color-lime-list, $color-primary-depth) !default;
 
 /// Yellow color
 /// @access public
 /// @type Color
-$color-yellow: map-get($color-yellow-list, $color-primary-depth) !default;
+$color-yellow: map.get($color-yellow-list, $color-primary-depth) !default;
 
 /// Orange color
 /// @access public
 /// @type Color
-$color-orange: map-get($color-orange-list, $color-primary-depth) !default;
+$color-orange: map.get($color-orange-list, $color-primary-depth) !default;
 
 /// White color
 /// @access public
@@ -489,12 +491,12 @@ $color-main-list: (
   'warning': $color-yellow,
   'info': $color-blue,
 ) !default;
-$color-primary: map-get($color-main-list, 'primary') !default;
-$color-secondary: map-get($color-main-list, 'secondary') !default;
-$color-success: map-get($color-main-list, 'success') !default;
-$color-danger: map-get($color-main-list, 'danger') !default;
-$color-warning: map-get($color-main-list, 'warning') !default;
-$color-info: map-get($color-main-list, 'info') !default;
+$color-primary: map.get($color-main-list, 'primary') !default;
+$color-secondary: map.get($color-main-list, 'secondary') !default;
+$color-success: map.get($color-main-list, 'success') !default;
+$color-danger: map.get($color-main-list, 'danger') !default;
+$color-warning: map.get($color-main-list, 'warning') !default;
+$color-info: map.get($color-main-list, 'info') !default;
 
 /// Color for paragraph normal text
 /// @type Color

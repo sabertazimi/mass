@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 ////
 /// Global typography variablse defination
 /// @group Typography
@@ -20,7 +22,7 @@ $font-stack: (
 /// Root text font scale ratio
 /// @type Number
 $root-scale-ratio: 100% !default;
-$root-base-size: 16px * ($root-scale-ratio / 100%) !default;
+$root-base-size: 16px * math.div($root-scale-ratio, 100%) !default;
 
 /// Base text font size
 /// @type Length
@@ -37,19 +39,19 @@ $text-scale-ratio-6: ($text-scale-ratio-5 * $text-scale-ratio);
 
 /// Text font-size group
 /// @type Length
-$text-xxxsmall: ($text-base-size / $text-scale-ratio-4) !default;
+$text-xxxsmall: math.div($text-base-size, $text-scale-ratio-4) !default;
 
 /// Text font-size group
 /// @type Length
-$text-xxsmall: ($text-base-size / $text-scale-ratio-3) !default;
+$text-xxsmall: math.div($text-base-size, $text-scale-ratio-3) !default;
 
 /// Text font-size group
 /// @type Length
-$text-xsmall: ($text-base-size / $text-scale-ratio-2) !default;
+$text-xsmall: math.div($text-base-size, $text-scale-ratio-2) !default;
 
 /// Text font-size group
 /// @type Length
-$text-small: ($text-base-size / $text-scale-ratio) !default;
+$text-small: math.div($text-base-size, $text-scale-ratio) !default;
 
 /// Text font-size group
 /// @type Length
