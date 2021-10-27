@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/sabertazimi/mass/compare/v1.2.0...v1.3.0) (2021-10-27)
+
+
+### Features
+
+* **sass:** ship to `dart-sass`, drop `node-sass` ([4022ddb](https://github.com/sabertazimi/mass/commit/4022ddb902e984eb4a8337fda670c0b01844d78b))
+
+
+### Building Work
+
+* **deps-bot:** add renovate.json ([#102](https://github.com/sabertazimi/mass/issues/102)) ([6142d0e](https://github.com/sabertazimi/mass/commit/6142d0ed39ae04baa1f5edef39b39067c76e6690))
+* **deps-bot:** change PR concurrent limits ([5516850](https://github.com/sabertazimi/mass/commit/55168503d26bf1f52c585f01585494d06b374e3e))
+* **deps-bot:** enable auto-merge on non-major deps update ([0089382](https://github.com/sabertazimi/mass/commit/0089382815b17afef027e5537982bcca370dc062))
+* **deps-bot:** remove GitHub dependabot ([b90f483](https://github.com/sabertazimi/mass/commit/b90f483592b102c9ecdfc4d1486ab684ae70ffbf))
+* **deps-bot:** setup automerge configuration ([536119f](https://github.com/sabertazimi/mass/commit/536119f72782318387ba05eb10dca97247106679))
+* **deps-bot:** setup renovate bot configuration ([cbf5cc9](https://github.com/sabertazimi/mass/commit/cbf5cc949c7571d16c4bf50b5bb4567acfc60e3e))
+* **deps-bot:** setup renovate bot configuration ([2ab8cc4](https://github.com/sabertazimi/mass/commit/2ab8cc4040f430d6b73514b5ea4ad99bc3962972))
+* **deps-bot:** widen peerDeps and engines ([5d74aa2](https://github.com/sabertazimi/mass/commit/5d74aa2f642e8f01952a5484c45cfad9bd78482b))
+* **deps-dev:** bump stylelint-config-mass from 5.3.2 to 5.3.3 ([#101](https://github.com/sabertazimi/mass/issues/101)) ([a760077](https://github.com/sabertazimi/mass/commit/a760077086e349d7e27be8eb097103ac5c48d699))
+* **deps:** bundle bod deps into single PR ([5a797ee](https://github.com/sabertazimi/mass/commit/5a797ee9f2166750f9271b3aa5700deb113aabbc))
+* **eslint:** add `dg-scripts` eslint configuration ([339cec9](https://github.com/sabertazimi/mass/commit/339cec920274bd5ab893df0501a6aec07b21fd45))
+* **webpack:** disable production source map ([b0a3d49](https://github.com/sabertazimi/mass/commit/b0a3d49f3d97452f58452c2b189645cbfaadbc57))
+* **yarn:** bump yarn from v3.0.2 to v3.1.0 ([47d61d1](https://github.com/sabertazimi/mass/commit/47d61d1ca3693522f72d3283e6c503bee0ed1d60))
+* **yarn:** switch from npm to yarn ([ea34819](https://github.com/sabertazimi/mass/commit/ea348193aaf910217f0265a62431a046f94a192f))
+
 ## [1.2.0](https://github.com/sabertazimi/mass/compare/v1.1.0...v1.2.0) (2021-09-05)
 
 
