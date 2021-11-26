@@ -33,7 +33,7 @@
     "url": "https://github.com/sabertazimi/mass/issues"
   },
   "homepage": "https://github.com/sabertazimi/mass",
-  "packageManager": "yarn@3.1.0",
+  "packageManager": "yarn@3.1.1",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.16.0",
