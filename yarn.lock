@@ -1690,7 +1690,7 @@ __metadata:
     prettier: ^2.6.1
     react: ^17.0.2
     react-dom: ^17.0.2
-    sass: ^1.49.9
+    sass: ^1.49.10
     sass-loader: ^12.6.0
     sassdoc: ^2.7.3
     standard-version: ^9.3.2
@@ -1699,7 +1699,7 @@ __metadata:
     stylelint-webpack-plugin: ^3.2.0
     terser-webpack-plugin: ^5.3.1
     typescript: ^4.6.3
-    webpack: ^5.70.0
+    webpack: ^5.71.0
     webpack-cli: ^4.9.2
     webpack-dev-server: ^4.7.4
   languageName: unknown
@@ -10060,16 +10060,16 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.49.9":
-  version: 1.49.9
-  resolution: "sass@npm:1.49.9"
+"sass@npm:^1.49.10":
+  version: 1.49.10
+  resolution: "sass@npm:1.49.10"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: e5653e3499274c5127dcb5c9e7c5f6930378fc61764d999a5d8965782e027181ed09714f94836dec74ef55e3a858107fe6c571954c0cab0ad0be5ab8e586829c
+  checksum: 7b767ece77df47382ac80ff279f5c1cff24dec6684ccaf3f9657f52a793e7ba7b85e4d30a45fb6c70f9fc46da507559fe83e771dcb804341d03af908ad6404c9
   languageName: node
   linkType: hard
 
@@ -11907,9 +11907,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.70.0":
-  version: 5.70.0
-  resolution: "webpack@npm:5.70.0"
+"webpack@npm:^5.71.0":
+  version: 5.71.0
+  resolution: "webpack@npm:5.71.0"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^0.0.51
@@ -11940,7 +11940,7 @@ resolve@^2.0.0-next.3:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 00439884a9cdd5305aed3ce93735635785a15c5464a6d2cfce87e17727a07585de02420913e82aa85ddd2ae7322175d2cfda6ac0878a17f061cb605e6a7db57a
+  checksum: 84b273a15180d45dafe4fc4a3ccccba2f72210f327a1af39713b3ef78148768afb0e18fa0cddaea4af5dd54ace199fbbdfcef9aec8da7e9c248f8b1b7cc413e1
   languageName: node
   linkType: hard
 
