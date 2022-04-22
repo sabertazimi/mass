@@ -1672,7 +1672,7 @@ __metadata:
     "@dg-scripts/eslint-config": ^5.8.1
     "@dg-scripts/stylelint-config": ^5.8.1
     autoprefixer: ^10.4.4
-    babel-loader: ^8.2.4
+    babel-loader: ^8.2.5
     clean-webpack-plugin: ^4.0.0
     cross-env: ^7.0.3
     css-loader: ^6.7.1
@@ -1687,9 +1687,9 @@ __metadata:
     prettier: ^2.6.2
     react: ^18.0.0
     react-dom: ^18.0.0
-    sass: ^1.50.0
+    sass: ^1.50.1
     sass-loader: ^12.6.0
-    sassdoc: ^2.7.3
+    sassdoc: ^2.7.4
     standard-version: ^9.3.2
     style-loader: ^3.3.1
     stylelint: ^14.7.1
@@ -2734,9 +2734,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:^8.2.4":
-  version: 8.2.4
-  resolution: "babel-loader@npm:8.2.4"
+"babel-loader@npm:^8.2.5":
+  version: 8.2.5
+  resolution: "babel-loader@npm:8.2.5"
   dependencies:
     find-cache-dir: ^3.3.1
     loader-utils: ^2.0.0
@@ -2745,7 +2745,7 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0
     webpack: ">=2"
-  checksum: 4968251fc4af4279c8e44adba523ed4ad18942f04b37061298e81640d09a570f66e6d53948e39a7d3c3d24ca2b025f0a07c606fadd8e3fbffa8912fd789fd4f0
+  checksum: a6605557885eabbc3250412405f2c63ca87287a95a439c643fdb47d5ea3d5326f72e43ab97be070316998cb685d5dfbc70927ce1abe8be7a6a4f5919287773fb
   languageName: node
   linkType: hard
 
@@ -9955,16 +9955,16 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.50.0":
-  version: 1.50.0
-  resolution: "sass@npm:1.50.0"
+"sass@npm:^1.50.1":
+  version: 1.50.1
+  resolution: "sass@npm:1.50.1"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 43738cc83a3921731456f769aba190277f0620f8b80c14426ab098be9ab8dc8465957f5bf2edbcffda189edb3024ed83dee2cb8cd580459ca4984a9fc88c18f7
+  checksum: c06334dbf8eddd508d90ca529c6ffb88cb5861d18cec285480d212b9dbe0a46441cbfd8aa10565780551c71372617465e6c77298e734180e2da2628ce6c46545
   languageName: node
   linkType: hard
 
@@ -9994,9 +9994,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sassdoc@npm:^2.7.3":
-  version: 2.7.3
-  resolution: "sassdoc@npm:2.7.3"
+"sassdoc@npm:^2.7.4":
+  version: 2.7.4
+  resolution: "sassdoc@npm:2.7.4"
   dependencies:
     ansi-styles: ^4.2.1
     babel-runtime: ^6.26.0
@@ -10024,7 +10024,7 @@ resolve@^2.0.0-next.3:
     vinyl-string: ^1.0.2
   bin:
     sassdoc: bin/sassdoc
-  checksum: 228b9526f6e5a84cbf1874f2a393f0adf46acba7f3e246116cba9b8bee713af9dd9a6da4008816e173b2f8f2ebb04a0156311bc9dbeb4328be2abd74859e364c
+  checksum: 5dfb98d18b2be19f0caf3534a745b4437ccc353a43aab9f42c8a938c6e2d71b3c0d9c1c86278a220e1579947ace06ae9753aec316148797f770fe144dda8f280
   languageName: node
   linkType: hard
 
