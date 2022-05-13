@@ -33,7 +33,7 @@
     "url": "https://github.com/sabertazimi/mass/issues"
   },
   "homepage": "https://github.com/sabertazimi/mass",
-  "packageManager": "yarn@3.2.0",
+  "packageManager": "yarn@3.2.1",
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@babel/plugin-proposal-object-rest-spread": "^7.17.3",
@@ -66,7 +66,7 @@
     "stylelint-webpack-plugin": "^3.2.0",
     "terser-webpack-plugin": "^5.3.1",
     "typescript": "^4.6.4",
-    "webpack": "^5.72.0",
+    "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0"
   }
