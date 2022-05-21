@@ -58,7 +58,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "sass": "^1.52.1",
-    "sass-loader": "^12.6.0",
+    "sass-loader": "^13.0.0",
     "sassdoc": "^2.7.4",
     "standard-version": "^9.3.2",
     "style-loader": "^3.3.1",
