@@ -33,11 +33,11 @@
     "url": "https://github.com/sabertazimi/mass/issues"
   },
   "homepage": "https://github.com/sabertazimi/mass",
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@3.2.2",
   "devDependencies": {
-    "@babel/core": "^7.18.6",
-    "@babel/plugin-proposal-object-rest-spread": "^7.18.6",
-    "@babel/preset-env": "^7.18.6",
+    "@babel/core": "^7.18.9",
+    "@babel/plugin-proposal-object-rest-spread": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
     "@babel/preset-react": "^7.18.6",
     "@dg-scripts/eslint-config": "^5.11.0",
     "@dg-scripts/stylelint-config": "^5.11.0",
