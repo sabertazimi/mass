@@ -1763,13 +1763,13 @@ __metadata:
     babel-loader: ^9.1.0
     clean-webpack-plugin: ^4.0.0
     cross-env: ^7.0.3
-    css-loader: ^6.7.1
+    css-loader: ^6.7.2
     css-minimizer-webpack-plugin: ^4.2.2
     eslint: ^8.27.0
     eslint-webpack-plugin: ^3.2.0
     html-loader: ^4.2.0
     html-webpack-plugin: ^5.5.0
-    mini-css-extract-plugin: ^2.6.1
+    mini-css-extract-plugin: ^2.7.0
     postcss: ^8.4.19
     postcss-loader: ^7.0.1
     prettier: ^2.7.1
@@ -1783,7 +1783,7 @@ __metadata:
     stylelint: ^14.15.0
     stylelint-webpack-plugin: ^3.3.0
     terser-webpack-plugin: ^5.3.6
-    typescript: ^4.8.4
+    typescript: ^4.9.3
     webpack: ^5.75.0
     webpack-cli: ^4.10.0
     webpack-dev-server: ^4.11.1
@@ -4054,21 +4054,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:^6.7.1":
-  version: 6.7.1
-  resolution: "css-loader@npm:6.7.1"
+"css-loader@npm:^6.7.2":
+  version: 6.7.2
+  resolution: "css-loader@npm:6.7.2"
   dependencies:
     icss-utils: ^5.1.0
-    postcss: ^8.4.7
+    postcss: ^8.4.18
     postcss-modules-extract-imports: ^3.0.0
     postcss-modules-local-by-default: ^4.0.0
     postcss-modules-scope: ^3.0.0
     postcss-modules-values: ^4.0.0
     postcss-value-parser: ^4.2.0
-    semver: ^7.3.5
+    semver: ^7.3.8
   peerDependencies:
     webpack: ^5.0.0
-  checksum: 170fdbc630a05a43679ef60fa97694766b568dbde37adccc0faafa964fc675f08b976bc68837bb73b61d60240e8d2cbcbf51540fe94ebc9dafc56e7c46ba5527
+  checksum: f3c980cc9c033a02e60df7e5a2f33a1e8c2c3dd552f017485d2d81b383be623ae8c4189404e7a4a7403b52744683ae4b516def0f7ccf125c2b198cb647e46543
   languageName: node
   linkType: hard
 
@@ -5678,7 +5678,7 @@ __metadata:
 
 "fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -7960,14 +7960,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"mini-css-extract-plugin@npm:^2.6.1":
-  version: 2.6.1
-  resolution: "mini-css-extract-plugin@npm:2.6.1"
+"mini-css-extract-plugin@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "mini-css-extract-plugin@npm:2.7.0"
   dependencies:
     schema-utils: ^4.0.0
   peerDependencies:
     webpack: ^5.0.0
-  checksum: df60840404878c4832b4104799fd29c5a89b06b1e377956c8d4a5729efe0ef301a52e5087d6f383871df5e69a8445922a0ae635c11abf412d7645a7096d0e973
+  checksum: e6b111d4289132bd496286eec42801c74c83af7eac71af630a5babae48ca65377f47d8b39e1f0653b449e68e67b57dbd0d36917242f08fc3e7770e70c0cb56cd
   languageName: node
   linkType: hard
 
@@ -9314,7 +9314,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.3.11, postcss@npm:^8.4.0, postcss@npm:^8.4.17, postcss@npm:^8.4.19, postcss@npm:^8.4.7":
+"postcss@npm:^8.3.11, postcss@npm:^8.4.0, postcss@npm:^8.4.17, postcss@npm:^8.4.18, postcss@npm:^8.4.19":
   version: 8.4.19
   resolution: "postcss@npm:8.4.19"
   dependencies:
@@ -9923,7 +9923,7 @@ resolve@^2.0.0-next.3:
 
 "resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.9.0#~builtin<compat/resolve>":
   version: 1.22.0
-  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=c3c19d"
   dependencies:
     is-core-module: ^2.8.1
     path-parse: ^1.0.7
@@ -9936,7 +9936,7 @@ resolve@^2.0.0-next.3:
 
 "resolve@patch:resolve@^2.0.0-next.3#~builtin<compat/resolve>":
   version: 2.0.0-next.3
-  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.3#~builtin<compat/resolve>::version=2.0.0-next.3&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.3#~builtin<compat/resolve>::version=2.0.0-next.3&hash=c3c19d"
   dependencies:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
@@ -10254,14 +10254,14 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.0.0, semver@npm:^7.1.1, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.6, semver@npm:^7.3.7":
-  version: 7.3.7
-  resolution: "semver@npm:7.3.7"
+"semver@npm:^7.0.0, semver@npm:^7.1.1, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.6, semver@npm:^7.3.7, semver@npm:^7.3.8":
+  version: 7.3.8
+  resolution: "semver@npm:7.3.8"
   dependencies:
     lru-cache: ^6.0.0
   bin:
     semver: bin/semver.js
-  checksum: 2fa3e877568cd6ce769c75c211beaed1f9fce80b28338cadd9d0b6c40f2e2862bafd62c19a6cff42f3d54292b7c623277bcab8816a2b5521cf15210d43e75232
+  checksum: ba9c7cbbf2b7884696523450a61fee1a09930d888b7a8d7579025ad93d459b2d1949ee5bbfeb188b2be5f4ac163544c5e98491ad6152df34154feebc2cc337c1
   languageName: node
   linkType: hard
 
@@ -11379,23 +11379,23 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.8.4":
-  version: 4.8.4
-  resolution: "typescript@npm:4.8.4"
+"typescript@npm:^4.9.3":
+  version: 4.9.3
+  resolution: "typescript@npm:4.9.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 3e4f061658e0c8f36c820802fa809e0fd812b85687a9a2f5430bc3d0368e37d1c9605c3ce9b39df9a05af2ece67b1d844f9f6ea8ff42819f13bcb80f85629af0
+  checksum: 17b8f816050b412403e38d48eef0e893deb6be522d6dc7caf105e54a72e34daf6835c447735fd2b28b66784e72bfbf87f627abb4818a8e43d1fa8106396128dc
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.8.4#~builtin<compat/typescript>":
-  version: 4.8.4
-  resolution: "typescript@patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"
+"typescript@patch:typescript@^4.9.3#~builtin<compat/typescript>":
+  version: 4.9.3
+  resolution: "typescript@patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 301459fc3eb3b1a38fe91bf96d98eb55da88a9cb17b4ef80b4d105d620f4d547ba776cc27b44cc2ef58b66eda23fe0a74142feb5e79a6fb99f54fc018a696afa
+  checksum: 67ca21a387c0572f1c04936e638dde7782c5aa520c3754aadc7cc9b7c915da9ebc3e27c601bfff4ccb7d7264e82dce6d277ada82ec09dc75024349e0ef64926d
   languageName: node
   linkType: hard
 
