@@ -5,18 +5,14 @@
 /// 5. import `components`
 /// 6. import `themes` (or `pages` when it's not `partial` directory)
 @charset 'utf-8';
-
 @import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
-
 @import 'base/reset';
 @import 'base/helpers';
 @import 'base/typography';
 @import 'base/colors';
 @import 'base/animation';
-
 @import 'layouts/grid';
-
 @import 'components/button';

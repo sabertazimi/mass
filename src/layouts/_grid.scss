@@ -11,6 +11,7 @@ $grid-max-columns: 12 !default;
 /// @require $grid-max-columns
 @function floor-width($i, $max: $grid-max-columns) {
   $width: math.div($i, $max);
+
   @return math.percentage($width);
 }
 
