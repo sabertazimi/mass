@@ -4,7 +4,7 @@
 [![LICENSE](https://img.shields.io/github/license/sabertazimi/mass?style=for-the-badge)](https://raw.githubusercontent.com/sabertazimi/mass/main/LICENSE)
 
 [![Code Lines](https://img.shields.io/tokei/lines/github/sabertazimi/mass?style=for-the-badge&logo=visualstudiocode)](https://github.com/sabertazimi/mass)
-[![CI](https://img.shields.io/github/workflow/status/sabertazimi/mass/CI/main?style=for-the-badge&logo=github)](https://github.com/sabertazimi/mass/actions/workflows/ci.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/sabertazimi/mass/ci.yml?branch=main&style=for-the-badge&logo=github)](https://github.com/sabertazimi/mass/actions/workflows/ci.yml)
 
 A minimal sass-based UI library - [mass.css](https://sabertazimi.github.io/mass)
 
