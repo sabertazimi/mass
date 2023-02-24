@@ -35,7 +35,7 @@
   "homepage": "https://github.com/sabertazimi/mass",
   "packageManager": "yarn@3.4.1",
   "devDependencies": {
-    "@babel/core": "^7.20.12",
+    "@babel/core": "^7.21.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
@@ -62,7 +62,7 @@
     "sassdoc": "^2.7.4",
     "standard-version": "^9.3.2",
     "style-loader": "^3.3.1",
-    "stylelint": "^15.1.0",
+    "stylelint": "^15.2.0",
     "stylelint-webpack-plugin": "^4.1.0",
     "terser-webpack-plugin": "^5.3.6",
     "typescript": "^4.9.5",
