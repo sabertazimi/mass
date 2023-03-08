@@ -11,8 +11,8 @@
     "gh-pages": "yarn examples && yarn docs",
     "lib": "cross-env NODE_ENV=production webpack --mode production && rm -fr ./lib/mass.js && rm -fr ./lib/mass.min.js ./lib/mass.min.js.map",
     "lint": "stylelint **/*.scss && eslint --ext .js --ext .jsx ./examples/",
-    "prelease": "standard-version --dry-run -s",
-    "release": "standard-version -s",
+    "changeset": "commit-and-tag-version --dry-run -s",
+    "release": "commit-and-tag-version -s",
     "start": "yarn dev"
   },
   "repository": {
@@ -44,6 +44,7 @@
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
+    "commit-and-tag-version": "^11.1.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^4.2.2",
@@ -60,7 +61,6 @@
     "sass": "^1.58.3",
     "sass-loader": "^13.2.0",
     "sassdoc": "^2.7.4",
-    "standard-version": "^9.3.2",
     "style-loader": "^3.3.1",
     "stylelint": "^15.2.0",
     "stylelint-webpack-plugin": "^4.1.0",
