@@ -55,10 +55,10 @@
     "mini-css-extract-plugin": "^2.7.5",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.1.0",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.59.3",
+    "sass": "^1.60.0",
     "sass-loader": "^13.2.1",
     "sassdoc": "^2.7.4",
     "style-loader": "^3.3.2",
@@ -66,7 +66,7 @@
     "stylelint-webpack-plugin": "^4.1.0",
     "terser-webpack-plugin": "^5.3.7",
     "typescript": "^5.0.2",
-    "webpack": "^5.76.2",
+    "webpack": "^5.76.3",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.1"
   }
