@@ -74,6 +74,7 @@
 /// media queries helper mixin
 /// @access public
 /// @param {String} $range [medium-up] - different range of device size
+/* stylelint-disable media-query-no-invalid */
 @mixin respond-to($range: medium-up) {
   @if $range == small-up {
     @media only screen {
@@ -115,6 +116,7 @@
     @error 'Invalid device size range.';
   }
 }
+/* stylelint-enable media-query-no-invalid */
 
 /// Helper to clear inner floats
 /// @author Nicolas Gallagher
