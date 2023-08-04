@@ -2042,10 +2042,10 @@ __metadata:
     mini-css-extract-plugin: ^2.7.6
     postcss: ^8.4.27
     postcss-loader: ^7.3.3
-    prettier: ^3.0.0
+    prettier: ^3.0.1
     react: ^18.2.0
     react-dom: ^18.2.0
-    sass: ^1.64.1
+    sass: ^1.64.2
     sass-loader: ^13.3.2
     sassdoc: ^2.7.4
     style-loader: ^3.3.3
@@ -10230,12 +10230,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "prettier@npm:3.0.0"
+"prettier@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "prettier@npm:3.0.1"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 6a832876a1552dc58330d2467874e5a0b46b9ccbfc5d3531eb69d15684743e7f83dc9fbd202db6270446deba9c82b79d24383d09924c462b457136a759425e33
+  checksum: e1f3f16c7fe0495de3faa182597871f74927d787cce3c52095a66ff5d7eacc05173371d5f58bf12141a0a1b6bfe739a338531d6cf18b92c7256c1319f2c84e73
   languageName: node
   linkType: hard
 
@@ -11034,16 +11034,16 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.64.1":
-  version: 1.64.1
-  resolution: "sass@npm:1.64.1"
+"sass@npm:^1.64.2":
+  version: 1.64.2
+  resolution: "sass@npm:1.64.2"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: e908f96f3d5fa5869e2f2aec97548c93d6ef390680af89870fcae8bdbaee2392ac650fbeae8d2ef8e4c99cb9f81e6b3624e1cb659af6d6e746332a22233b5ad8
+  checksum: 43a5c9b9b3b6ba27feb5c45eba90edc437b15a30fd443f5d2623bbd59fe4a922f2a6a9990296c6a6c2b5bce7f401922c5049357415f50b745952c2d478bc5526
   languageName: node
   linkType: hard
 
