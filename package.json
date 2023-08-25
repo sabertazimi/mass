@@ -33,9 +33,9 @@
     "url": "https://github.com/sabertazimi/mass/issues"
   },
   "homepage": "https://github.com/sabertazimi/mass",
-  "packageManager": "yarn@3.6.2",
+  "packageManager": "yarn@3.6.3",
   "devDependencies": {
-    "@babel/core": "^7.22.10",
+    "@babel/core": "^7.22.11",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/preset-env": "^7.22.10",
     "@babel/preset-react": "^7.22.5",
@@ -44,7 +44,7 @@
     "autoprefixer": "^10.4.15",
     "babel-loader": "^9.1.3",
     "clean-webpack-plugin": "^4.0.0",
-    "commit-and-tag-version": "^11.2.2",
+    "commit-and-tag-version": "^11.2.3",
     "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
@@ -65,7 +65,7 @@
     "stylelint": "^15.10.3",
     "stylelint-webpack-plugin": "^4.1.1",
     "terser-webpack-plugin": "^5.3.9",
-    "typescript": "^5.1.6",
+    "typescript": "^5.2.2",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
