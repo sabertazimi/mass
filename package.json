@@ -35,10 +35,10 @@
   "homepage": "https://github.com/sabertazimi/mass",
   "packageManager": "yarn@3.6.3",
   "devDependencies": {
-    "@babel/core": "^7.22.11",
+    "@babel/core": "^7.22.17",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
-    "@babel/preset-env": "^7.22.14",
-    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/preset-react": "^7.22.15",
     "@dg-scripts/eslint-config": "^5.14.0",
     "@dg-scripts/stylelint-config": "^5.14.0",
     "autoprefixer": "^10.4.15",
