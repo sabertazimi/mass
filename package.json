@@ -33,7 +33,7 @@
     "url": "https://github.com/sabertazimi/mass/issues"
   },
   "homepage": "https://github.com/sabertazimi/mass",
-  "packageManager": "yarn@3.6.4",
+  "packageManager": "yarn@3.7.0",
   "devDependencies": {
     "@babel/core": "^7.23.3",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
@@ -55,7 +55,7 @@
     "mini-css-extract-plugin": "^2.7.6",
     "postcss": "^8.4.31",
     "postcss-loader": "^7.3.3",
-    "prettier": "^3.0.3",
+    "prettier": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.69.5",
