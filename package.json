@@ -35,9 +35,9 @@
   "homepage": "https://github.com/sabertazimi/mass",
   "packageManager": "yarn@3.7.0",
   "devDependencies": {
-    "@babel/core": "^7.23.5",
+    "@babel/core": "^7.23.6",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
-    "@babel/preset-env": "^7.23.5",
+    "@babel/preset-env": "^7.23.6",
     "@babel/preset-react": "^7.23.3",
     "@dg-scripts/eslint-config": "^5.14.0",
     "@dg-scripts/stylelint-config": "^5.14.0",
