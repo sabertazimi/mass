@@ -1897,7 +1897,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jridgewell/trace-mapping@npm:^0.3.17, @jridgewell/trace-mapping@npm:^0.3.18, @jridgewell/trace-mapping@npm:^0.3.9":
+"@jridgewell/trace-mapping@npm:^0.3.17, @jridgewell/trace-mapping@npm:^0.3.18, @jridgewell/trace-mapping@npm:^0.3.20, @jridgewell/trace-mapping@npm:^0.3.9":
   version: 0.3.20
   resolution: "@jridgewell/trace-mapping@npm:0.3.20"
   dependencies:
@@ -2016,17 +2016,17 @@ __metadata:
     html-webpack-plugin: "npm:^5.6.0"
     mini-css-extract-plugin: "npm:^2.7.6"
     postcss: "npm:^8.4.32"
-    postcss-loader: "npm:^7.3.3"
+    postcss-loader: "npm:^7.3.4"
     prettier: "npm:^3.1.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    sass: "npm:^1.69.5"
-    sass-loader: "npm:^13.3.2"
+    sass: "npm:^1.69.6"
+    sass-loader: "npm:^13.3.3"
     sassdoc: "npm:^2.7.4"
     style-loader: "npm:^3.3.3"
     stylelint: "npm:^16.1.0"
     stylelint-webpack-plugin: "npm:^4.1.1"
-    terser-webpack-plugin: "npm:^5.3.9"
+    terser-webpack-plugin: "npm:^5.3.10"
     typescript: "npm:^5.3.3"
     webpack: "npm:^5.89.0"
     webpack-cli: "npm:^5.1.4"
@@ -4444,7 +4444,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cosmiconfig@npm:^8.2.0":
+"cosmiconfig@npm:^8.3.5":
   version: 8.3.6
   resolution: "cosmiconfig@npm:8.3.6"
   dependencies:
@@ -7891,7 +7891,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jiti@npm:^1.18.2":
+"jiti@npm:^1.20.0":
   version: 1.21.0
   resolution: "jiti@npm:1.21.0"
   bin:
@@ -9851,17 +9851,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-loader@npm:^7.3.3":
-  version: 7.3.3
-  resolution: "postcss-loader@npm:7.3.3"
+"postcss-loader@npm:^7.3.4":
+  version: 7.3.4
+  resolution: "postcss-loader@npm:7.3.4"
   dependencies:
-    cosmiconfig: "npm:^8.2.0"
-    jiti: "npm:^1.18.2"
-    semver: "npm:^7.3.8"
+    cosmiconfig: "npm:^8.3.5"
+    jiti: "npm:^1.20.0"
+    semver: "npm:^7.5.4"
   peerDependencies:
     postcss: ^7.0.0 || ^8.0.1
     webpack: ^5.0.0
-  checksum: d039654273f858be1f75dfdf8b550869d88905b73a7684b3e48a2937a6087619e84fd1a3551cdef78685a965a2573e985b29a532c3878d834071ecd2da0eb304
+  checksum: 1bf7614aeea9ad1f8ee6be3a5451576c059391688ea67f825aedc2674056369597faeae4e4a81fe10843884c9904a71403d9a54197e1f560e8fbb9e61f2a2680
   languageName: node
   linkType: hard
 
@@ -11021,7 +11021,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:^13.3.2":
+"sass-loader@npm:^13.3.3":
   version: 13.3.3
   resolution: "sass-loader@npm:13.3.3"
   dependencies:
@@ -11045,16 +11045,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.69.5":
-  version: 1.69.5
-  resolution: "sass@npm:1.69.5"
+"sass@npm:^1.69.6":
+  version: 1.69.6
+  resolution: "sass@npm:1.69.6"
   dependencies:
     chokidar: "npm:>=3.0.0 <4.0.0"
     immutable: "npm:^4.0.0"
     source-map-js: "npm:>=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: a9003a9482f2e467fc412cfe58ba4fa14fb78bef7e1283ce5d64a065f8a31114ec3bbf5d4e724f94eb8512c32c768a6f91f228c7f16a26a300bbf4db293b5608
+  checksum: 8153db8e51e74a9007bb54332e14d122c34288c7d21a5f2eaefef753a1b7bb13f35e042dc6247253dab5b1550b05cea27970371e7548286b4f50f23dd1147d89
   languageName: node
   linkType: hard
 
@@ -12076,15 +12076,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"terser-webpack-plugin@npm:^5.3.7, terser-webpack-plugin@npm:^5.3.9":
-  version: 5.3.9
-  resolution: "terser-webpack-plugin@npm:5.3.9"
+"terser-webpack-plugin@npm:^5.3.10, terser-webpack-plugin@npm:^5.3.7":
+  version: 5.3.10
+  resolution: "terser-webpack-plugin@npm:5.3.10"
   dependencies:
-    "@jridgewell/trace-mapping": "npm:^0.3.17"
+    "@jridgewell/trace-mapping": "npm:^0.3.20"
     jest-worker: "npm:^27.4.5"
     schema-utils: "npm:^3.1.1"
     serialize-javascript: "npm:^6.0.1"
-    terser: "npm:^5.16.8"
+    terser: "npm:^5.26.0"
   peerDependencies:
     webpack: ^5.1.0
   peerDependenciesMeta:
@@ -12094,11 +12094,11 @@ __metadata:
       optional: true
     uglify-js:
       optional: true
-  checksum: 8a757106101ea1504e5dc549c722506506e7d3f0d38e72d6c8108ad814c994ca0d67ac5d0825ba59704a4b2b04548201b2137f198bfce897b09fe9e36727a1e9
+  checksum: 66d1ed3174542560911cf96f4716aeea8d60e7caab212291705d50072b6ba844c7391442541b13c848684044042bea9ec87512b8506528c12854943da05faf91
   languageName: node
   linkType: hard
 
-"terser@npm:^5.10.0, terser@npm:^5.15.1, terser@npm:^5.16.8":
+"terser@npm:^5.10.0, terser@npm:^5.15.1, terser@npm:^5.26.0":
   version: 5.26.0
   resolution: "terser@npm:5.26.0"
   dependencies:
