@@ -4,16 +4,16 @@
   "description": "A minimal sass-based UI library",
   "main": "./lib/mass.min.css",
   "scripts": {
-    "build": "yarn lib && yarn gh-pages",
+    "build": "pnpm lib && pnpm gh-pages",
     "dev": "cross-env NODE_ENV=development webpack serve --port 2333 --mode development --open --config webpack.examples.config.js",
     "docs": "sassdoc ./src --verbose --config .sassdocrc.json",
     "examples": "cross-env NODE_ENV=production webpack --mode production --config webpack.examples.config.js",
-    "gh-pages": "yarn examples && yarn docs",
+    "gh-pages": "pnpm examples && pnpm run docs",
     "lib": "cross-env NODE_ENV=production webpack --mode production && rm -fr ./lib/mass.js && rm -fr ./lib/mass.min.js ./lib/mass.min.js.map",
     "lint": "stylelint **/*.scss && eslint --ext .js --ext .jsx ./examples/",
     "changeset": "commit-and-tag-version --dry-run -s",
     "release": "commit-and-tag-version -s",
-    "start": "yarn dev"
+    "start": "pnpm dev"
   },
   "repository": {
     "type": "git",
@@ -33,10 +33,10 @@
     "url": "https://github.com/sabertazimi/mass/issues"
   },
   "homepage": "https://github.com/sabertazimi/mass",
-  "packageManager": "yarn@4.1.0",
+  "packageManager": "pnpm@8.15.4",
   "devDependencies": {
     "@babel/core": "^7.24.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/plugin-transform-object-rest-spread": "^7.24.0",
     "@babel/preset-env": "^7.24.0",
     "@babel/preset-react": "^7.23.3",
     "@dg-scripts/eslint-config": "^5.14.2",

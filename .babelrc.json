@@ -1,4 +1,4 @@
 {
   "presets": ["@babel/env", "@babel/react"],
-  "plugins": ["@babel/proposal-object-rest-spread"]
+  "plugins": ["@babel/transform-object-rest-spread"]
 }
