@@ -1,2 +1,2 @@
-import '../src/mass.scss';
-import './index.scss';
+import '../src/mass.scss'
+import './index.scss'
