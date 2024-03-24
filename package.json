@@ -62,7 +62,7 @@
     "sass-loader": "^14.1.1",
     "sassdoc": "^2.7.4",
     "style-loader": "^3.3.4",
-    "stylelint": "^16.2.1",
+    "stylelint": "^16.3.0",
     "stylelint-webpack-plugin": "^5.0.0",
     "terser-webpack-plugin": "^5.3.10",
     "typescript": "^5.4.3",
